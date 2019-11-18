@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Titel</title>
+</head>
+<body>
+  <form action="doit()">
+
+    <fieldset>
+      <legend>Name</legend>
+      <label for="vorname">Vorname:</label>
+      <input type="text" id="vorname" name="Vorname">
+      <label for="nachname">Zuname:</label>
+      <input type="text" id="nachname" name="Zuname">
+    </fieldset>
+
+    <fieldset>
+      <legend>Emailadresse</legend>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" size="40">
+    </fieldset>
+
+    <fieldset>
+      <legend>Mietwagen</legend>
+      <label for="cars">Marke</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </fieldset>
+
+    <input type="submit" name="Abschicken" value="Senden">
+    <input type="reset" name="Abbrechen" value="Abbrechen">
+
+  </form>
+</body>
+</html>
