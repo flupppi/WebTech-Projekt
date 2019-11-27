@@ -1,5 +1,5 @@
-#WebTech-Projekt
-##Issue Board
+# WebTech-Projekt
+## Issue Board
 + Barrierefreiheit im Allgemeinen muss am besten *jetzt* nach geschaut werden
 + Bilder innerhalb des Sliders nicht mittig 
 + Kein einheitliches CSS
