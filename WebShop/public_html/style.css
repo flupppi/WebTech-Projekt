@@ -1387,27 +1387,21 @@ ul.breadcrumb {
     text-decoration: underline;
   }
 
-#wraper{
 
-    width: 1200px;
-    margin:auto;
-   
-}
+
 .haubt{
     background-color: white;
-    border: 2px solid #ff8888;
+    border: 2px solid black;
     height: 60px;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px ;
     padding-top: 10px;
-    padding-bottom:10px;
+    padding-bottom:15px;
+    padding-right: 500px;
 }
 .ul1{
     float: right;
-    margin-top: 20px;
-    
-}
+    margin-top: 2px;}
+  
 .ul1 li{
     list-style:none;
     display: inline-block;
@@ -1418,23 +1412,26 @@ ul.breadcrumb {
   padding: 10px  10px ;
   margin-right: 50px;
   text-transform:uppercase;
-color : rebeccapurple;                    }
+color : rebeccapurple;   
+margin-bottom: 15px;                }
 .ul1 li a.aktiv{
-    border: 1px solid red;
+    border: 1px solid  black;
 }
 .sub{
   background-color:white; 
   width: 100%;
   height: 60px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 10px ;
-  padding-top: 30px;
+  padding-top: 0px;
+  padding-bottom:10px ;
   border: 1px solid black;
 
 }
 .ul2{
     float: right;
     margin-right: 500px;
+    margin-bottom:20px;
 }
 .ul2 li{
     list-style: none;
