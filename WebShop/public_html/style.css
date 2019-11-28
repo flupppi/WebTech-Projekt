@@ -437,10 +437,11 @@ a{
     display:table;
     clear:both
 }
-.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter,.my-auto{
     float:left;
     width:100%
 }
+
 .w3-col.s1{
     width:8.33333%
 }
@@ -478,6 +479,9 @@ a{
     width:99.99999%
 }
 @media (min-width:601px){
+    .my-auto{
+        width:auto;
+    }
     .w3-col.m1{
         width:8.33333%
     }
@@ -502,6 +506,7 @@ a{
     .w3-col.m8,.w3-twothird{
         width:66.66666%
     }
+    
     .w3-col.m9,.w3-threequarter{
         width:74.99999%
     }
@@ -769,7 +774,7 @@ a{
 .w3-round-xxlarge{
     border-radius:32px
 }
-.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{
+.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.my-auto,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{
     padding:0 8px
 }
 .w3-container,.w3-panel{
@@ -1385,7 +1390,4 @@ ul.breadcrumb {
   ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
-  }
-  my-font-logo{
-    font-family: 'Calistoga', cursive;
   }
