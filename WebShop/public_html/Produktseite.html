@@ -2,92 +2,84 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
+<title >Produktseite</title>
+<link rel="shortcut icon" type="image/x-icon" href="31714.png">
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
-
-<script>
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = x.length }
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-    }
-    x[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " w3-opacity-off";
-  }
-</script>
-
 <style>
-  body {
-    font-family: "Lato", sans-serif
-  }
+    body {
+        font-family: "Lato", sans-serif
+    }
 
-  .mySlides {
-    display: none
-  }
+    .mySlides {
+        display: none
+    }
 </style>
 
 <body>
-  <!-- Header -->
-  <header>
-    <!--Top Bar - Language Switch-->
-    <div class="w3-bar">
-      <div class="w3-white" style="max-width: width auto;
-                    margin:auto">
-        <div class="w3-button w3-right" href="#">English</div>
-        <div class="w3-button w3-right" href="#">Deutsch</div>
-        <div class="w3-center w3-padding">HOME</div>
-      </div>
-    </div>
+    <!-- Header -->
 
-    <!--Static Icon Bar-->
-    <div class="w3-bar">
-      <div class="w3-bar w3-white">
-        <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> <span>ACCOUNT
-            ERSTELLEN</span>
-        </a>
-        <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i> <span>SUCHE</span></a>
-        <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
-          <span>WARENKORB</span></a>
-        <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i> <span>LOGIN</span></a>
-      </div>
-      <!--Site Logo-->
-      <div class="w3-center w3-white">
-        <div class="w3-padding-16">
-          <img src="nature.png" alt="WEBSHOP Logo" style="width:15%">
+    <header>
+        <!--Top Bar - Language Switch-->
+        <div class="w3-top">
+            <div class="w3-bar">
+                <div class="w3-white" style="max-width: width auto;
+                    margin:auto">
+                    <div class="w3-button w3-right" href="#">English</div>
+                    <div class="w3-button w3-right" href="#">Deutsch</div>
+                    <div class="w3-center w3-padding">HOME</div>
+                </div>
+            </div>
+
+            <!--Static Icon Bar-->
+            <div class="w3-bar">
+                <div class="w3-bar w3-white">
+                    <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> <span>ACCOUNT
+                            ERSTELLEN</span>
+                    </a>
+                    <a href="#" class="w3-bar-item w3-button w3-left w3-margin-left"><i class="fa fa-search"></i>
+                        <span>SUCHE</span></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
+                        <span>WARENKORB</span></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i>
+                        <span>LOGIN</span></a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!--Navigation Bar-->
-      <div class="w3-light-gray w3-padding">
-        <div class="w3-bar w3-light-gray w3-center w3-large" style="max-width:80%; margin:auto; font-weight:bold;">
-          <a href="#" style="width:16.66%" class="w3-bar-item
+        <!--Site Logo-->
+        <div class="w3-center w3-white" style="margin-top:32px">
+            <div class="w3-padding-16">
+                <img src="nature.png" alt="WEBSHOP Logo" style="width:15%">
+            </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="w3-light-gray w3-padding">
+            <div class="w3-bar w3-light-gray w3-center w3-large" style="max-width:80%; margin:auto; font-weight:bold;">
+                <a href="#" style="width:16.66%" class="w3-bar-item
                             w3-button w3-mobile">HOME</a>
-          <a href="#" style="width:16.66%" class="w3-bar-item
+                <a href="#" style="width:16.66%" class="w3-bar-item
                             w3-button w3-mobile">KATEGORIEN</a>
-          <a href="#" style="width:16.66%" class="w3-bar-item
+                <a href="#" style="width:16.66%" class="w3-bar-item
                             w3-button w3-mobile">BLOG</a>
-          <a href="#" style="width:16.66%" class="w3-bar-item
+                <a href="#" style="width:16.66%" class="w3-bar-item
                             w3-button w3-mobile">ABOUT</a>
-          <a href="#" style="width:16.66%" class="w3-bar-item
+                <a href="#" style="width:16.66%" class="w3-bar-item
                             w3-button w3-mobile">HERSTELLUNG</a>
-          <a href="#" style="width:16.66%" class="w3-bar-item
+                <a href="#" style="width:16.66%" class="w3-bar-item
                             w3-button w3-mobile">FAQ</a>
+            </div>
         </div>
-      </div>
+    <!--Breadcrumb-->
+    <div class="w3-bar">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kategorien</a></li>
+            <li>Shirts</li>
+        </ul>
     </div>
+</header>
     <div class="w3-bar" style="max-width: 1280px; margin-left:auto;margin-right:auto; ">
 
 
@@ -118,7 +110,7 @@
           </div>
         </div>
       </div>
-      <div class="w3-margin w3-card w3-show-inline-block" style="max-width:600px;">
+      <div class="w3-margin  w3-show-inline-block" style="max-width:600px;">
         <div class="w3-left-align w3-margin">
           <h1 style="font-size: x-large; font-weight:400">
             <span class="w3-text-dark-gray" style="text-transform: uppercase;">UO Billie Dark Floral Mesh Wrap Mini
@@ -138,7 +130,7 @@
           </h1>
         </div>
 
-        <div class="w3-bar">
+        <div class="w3-bar w3-border-top">
           <div class="w3-left w3-bar-item">
             <b class="w3-bar-item" style=" font-weight:bolder">
               SIZE
@@ -150,8 +142,21 @@
             <div class="w3-bar-item w3-button"><b>L</b></div>
           </div>
         </div>
+        <div class="w3-bar w3-border-top">
+            <div class="w3-left w3-bar-item w3-padding-16">
+                <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">-</button>
+                <div class="w3-bar-item w3-large"><b>1</b></div>
+                <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">+</button>
+            </div>
+            <div class="w3-right w3-bar-item">
+              <div class="w3-bar-item" >
+                  <button class="w3-btn w3-round w3-black">IN DEN WARENKORB</button></div>
+            </div>
+          </div>
       </div>
     </div>
+
+
     <div class=" w3-row">
       <div class="w3-padding-48 " style="max-width: 1180px; margin-left: auto; margin-right: auto; ">
         <div class="w3-bar">
