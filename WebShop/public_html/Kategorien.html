@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Webshop - Kategorien</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<?php include 'header.php';?>
 
+
+<!-- TODO fix sidebar and genderpicker alginment-->
+
+<!-- Sidebar -->
+<div class="w3-row">
+<nav class="w3-col m3 w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="/*z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <h3 class="w3-wide"><b>LOGO</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Caps</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Hoodies</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Logsleves</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Pullovers</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Accessories</a>
+    </div>
+</nav>
+
+<!--Pick your gender either men, women or child-->
+
+    <img id="women" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Womens_967X813_DE.jpg" alt="womens section">
+    <img id="men" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Mens_967X813_DE.jpg" alt="mens section">
+    <img id="kid" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Kids_967X813_DE.jpg" alt="kids section">
+</div>
+
+<script>//TODO change navbar content by clicking on the images and vice versa</script>
+<?php include 'footer.php';?>
 </body>
 </html>
