@@ -1,323 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Webshop - Home</title>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="webshop.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
 
-    <!--Boostrap 4 -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- für Icons von https://fontawesome.com/-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+</style>
+
 <body>
-<!--KOPFZEILE 1 Mit Seitentitel,Sprachauswahl. Bleibt immer fix an einem Ort auch beim Scrollen-->
-<nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <ul class="nav navbar-nav pull-sm-left">
-            <li class="nav-item">
-                <form class="form-inline" action="/action_page.php">
-                    <button class="btn btn-red" type="submit"><i class="fas fa-search"></i></button>
-                    <input class="form-control mr-sm-2" type="text">
-                </form>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-logo mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav pull-sm-right">
-            <li class="nav-item">
-                <i class="fas fa-globe-europe"></i>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!--KOPFZEILE 2 Login, Shoppincart,... . Gleiches Verhalten-->
-<!-- Banner -->
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <span class="nav-bar-text">NTG</span>
-    <img alt="Banner" src="w3schools728x90.gif">
-</div>
-
-<!--SEITENHEADER mit Logo und Kategorien. Scrollt mit der Seite-->
-<!-- Navigationsbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top justify-content-center">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">COLTHING</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">LOOKBOOK</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">ARTISTS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">BLOG</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT</a>
-        </li>
-    </ul>
-</nav>
-<main class="main-content" role="main">
-
-    <!--Slides-->
-<div class="container">
-
-    <!--MAIN CONTENT: Hier passiert das seitenspezifische geschehen.-->
-
-    <div id="demo" class="carousel slide " data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active ">
-                <img src="HTML/assets/DSC_9678_1024x1024.jpg" alt="shirt"  >
-            </div>
-            <div class="carousel-item">
-                <img src="HTML/assets/DSC_8986_1024x1024.jpg" alt="shirt">
-            </div>
-            <div class="carousel-item">
-                <img src="HTML/assets/DSC_8883_1024x1024.jpg" alt="cap">
-            </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-</div>
-    <!--Fillers-->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <img class="img-thumbnail" src="HTML/assets/beanie_charcoal_large.jpg" alt="beanie in charcoal">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <img class="img-thumbnail" src="HTML/assets/beanie_Grey_large.jpg" alt="beanie in grey">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <img class="img-thumbnail" src="HTML/assets/beanie_black_large.jpg" alt="beanie in black">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_crewneck_black_yellow_large.jpg">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_polo_black_white_large.jpg">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_polo_mint_white_large.jpg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_shirt_black_tuerkis_large.jpg">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_shirt_grey_black_large.jpg">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_shirt_grey_yellow_large.jpg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_shirt_white_black_large.jpg">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <img class="img-thumbnail" src="HTML/assets/deluxe_shirt_white_orange_large.jpg">
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <img class="img-thumbnail" src="HTML/assets/SchalSchalBinks-ProduktBild1_large.jpg">
+    <!-- Header -->
+    <header>
+        <!--Top Bar - Language Switch-->
+        <div class="w3-bar">
+            <div class="w3-white" style="max-width: width auto;
+                    margin:auto">
+                <div class="w3-button w3-right" href="#">English</div>
+                <div class="w3-button w3-right" href="#">Deutsch</div>
+                <div class="w3-center w3-padding">HOME</div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <img class="img-thumbnail" src="HTML/assets/ntg-dad-hat-20-blk-wht_large.JPG">
+        <!--Static Icon Bar-->
+        <div class="w3-bar">
+            <div class="w3-bar w3-white">
+                <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> <span>ACCOUNT
+                        ERSTELLEN</span>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i> <span>SUCHE</span></a>
+                <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
+                    <span>WARENKORB</span></a>
+                <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i> <span>LOGIN</span></a>
             </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <img class="img-thumbnail" src="HTML/assets/ntg-dad-hat-20-burg-wht_large.JPG">
+            <!--Site Logo-->
+            <div class="w3-center w3-white">
+                <div class="w3-padding-16">
+                    <img src="nature.png" alt="WEBSHOP Logo" style="width:15%">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <img class="img-thumbnail" src="HTML/assets/ntg-dad-hat-20-wht-blk_large.JPG">
+            <!--Navigation Bar-->
+            <div class="w3-light-gray w3-padding">
+                <div class="w3-bar w3-light-gray w3-center w3-large"
+                    style="max-width:80%; margin:auto; font-weight:bold;">
+                    <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">HOME</a>
+                    <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">KATEGORIEN</a>
+                    <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">BLOG</a>
+                    <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">ABOUT</a>
+                    <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">HERSTELLUNG</a>
+                    <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">FAQ</a>
+                </div>
+            </div>
+
+
+    </header>
+    <main>
+        <!-- Automatic Slideshow Images -->
+        <div class="w3-display-container w3-center">
+            <img src="home-slider-slide-1.jpg" style="width:100%">
+        </div>
+        <div style="max-width: 1180px; margin-left: auto; margin-right: auto; ">
+            <div class="w3-card-4 w3-margin w3-white w3-row">
+                <div class="w3-container">
+                    <h3><b>BLOG ENTRY</b></h3>
+                    <h5>Title description, <span class="w3-opacity">April
+                            2, 2014</span></h5>
+                </div>
+
+                <div class="w3-twothird">
+                    <div class="w3-container">
+                        <p>Mauris neque quam, fermentum ut nisl vitae,
+                            convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod
+                            placerat. Vivamus porttitor magna enim, ac
+                            accumsan tortor cursus at. Phasellus sed
+                            ultricies mi
+                            non
+                            congue ullam corper. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum,
+                            porta lectus vitae, ultricies congue gravida
+                            diam
+                            non
+                            fringilla.
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad
+                            minim veniam, quis nostruds
+                        </p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button class="w3-button w3-padding-large
+                                            w3-white w3-border"><b>READ MORE »</b></button>
+                                </p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments
+                                        </b> <span class="w3-badge">2</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <img src="man_hat.jpg" style="width:100%">
+                </div>
+
+            </div>
+            <div class="w3-card-4 w3-margin w3-white w3-row">
+                    <div class="w3-container">
+                        <h3><b>BLOG ENTRY</b></h3>
+                        <h5>Title description, <span class="w3-opacity">April
+                                2, 2014</span></h5>
+                    </div>
+
+                    <div class="w3-twothird">
+
+                    <div class="w3-container">
+                        <p>Mauris neque quam, fermentum ut nisl vitae,
+                            convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod
+                            placerat. Vivamus porttitor magna enim, ac
+                            accumsan tortor cursus at. Phasellus sed
+                            ultricies mi
+                            non
+                            congue ullam corper. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum,
+                            porta lectus vitae, ultricies congue gravida
+                            diam
+                            non
+                            fringilla.
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad
+                            minim veniam, quis nostruds
+                        </p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button class="w3-button w3-padding-large
+                                            w3-white w3-border"><b>READ MORE »</b></button>
+                                </p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments
+                                        </b> <span class="w3-badge">2</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <img src="img_manarola.jpg" style="width:100%">
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class=" w3-row">
+            <div class="w3-padding-48 " style="max-width: 1180px; margin-left: auto; margin-right: auto; ">
+                <div class="w3-bar">
+                    <span class=" fa-2x fa-tex w3-text-deep-orange">HIER GEHTS ZU DEN KLAMOTTEN</span>
+                    <div class=" w3-border w3-bar-item w3-button w3-right">
+                        <a class="">MEHR</a></div>
+                </div>
+                <div class="w3-quarter ">
+                    <div class=" w3-margin">
+                        <img src="img/deluxe_shirt_black_tuerkis_large.jpg" style="width:100%">
+                        <div class="w3-container w3-center">
+                            <h6>CLASSICS BRAND SHIRT</h5>
+                                <h6>30€</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-quarter">
+                    <div class=" w3-margin">
+                        <img src="img/deluxe_crewneck_black_yellow_large.jpg" style="width:100%">
+                        <div class="w3-container w3-center">
+                            <h5>CLASSICS BRAND SHIRT</h5>
+                            <h6>30€</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-quarter">
+                    <div class=" w3-margin">
+                        <img src="img/deluxe_polo_black_white_large.jpg" style="width:100%">
+                        <div class="w3-container w3-center">
+                            <h5>CLASSICS BRAND SHIRT</h5>
+                            <h6>30€</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-margin">
+                        <img src="img/deluxe_polo_black_white_large.jpg" style="width:100%">
+                        <div class="w3-container w3-center">
+                            <h5>CLASSICS BRAND SHIRT</h5>
+                            <h6>30€</h5>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
 
 
-<footer class="footer">
-    <div class="footer-navs">
-        <nav class="footer-nav" role="navigation">
-            <ul>
-                <li class="footer-nav_item">
+    </main>
+    <footer class="">
+        <div class="w3-cell-row w3-black w3-padding-24">
+            <nav class="w3-bar-block w3-cell w3-margin-left" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
 
-                    <a class="footer-nav_link" href="#">HOME</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">KATEGORIEN</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">BLOG</a>
-                </li>
-
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">COLLECTIONS</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">ABOUT</a>
-                </li>
-
-            </ul>
-        </nav>
-        <nav class="footer-nav" role="navigation">
-            <ul>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">HERREN</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">DAMEN</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">T-SHIRTS</a>
-                </li>
-
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">LONGSLEEVES</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">ACCESSOIRES</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="footer-nav" role="navigation">
-            <ul>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">FAQ</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">GRÖSSENTABELLEN</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">VERSANDKOSTEN</a>
-                </li>
-
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">UMTAUSCH & WIDERRUF</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">DATENSCHUTZERKLÄRUNG</a>
-                </li>
-
-            </ul>
-        </nav>
-        <nav class="footer-nav" role="navigation">
-            <ul>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">COOKIE-RICHTLINIE</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="Impressum.html">IMPRESSUM</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">AGB</a>
-                </li>
-
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">INSTAGRAM</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">FACEBOOK</a>
-                </li>
-
-            </ul>
-        </nav>
-        <nav class="footer-nav" role="navigation">
-            <ul>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">send</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">memes</a>
-                </li>
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">test1</a>
-                </li>
-
-                <li class="footer-nav_item">
-
-                    <a class="footer-nav_link" href="#">test1</a>
-                </li>
-                <li class="footer-nav_item">
-                    <a class="footer-nav_link" href="#">test1</a>
-                </li>
-
-            </ul>
-        </nav>
-    </div>
-</footer>
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+        </div>
+        <div class="w3-center w3-padding-64 w3-black">
+            <h1 style="font-family: 'Calistoga', cursive;">Firmenname</h1>
+        </div>
+    </footer>
 </body>
+
 </html>
