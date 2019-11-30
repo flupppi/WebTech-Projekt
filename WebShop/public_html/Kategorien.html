@@ -1,46 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Webshop - Kategorien</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webshop - Header</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/31714.png">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+</style>
+
 <body>
-<!--TODO encapsulate footer and header-->
-<?php include 'header.php';?>
+    <!-- Header -->
 
+    <header>
+        <!--Top Bar - Language Switch-->
+        <div class="w3-top">
+            <div class="w3-bar">
+                <div class="w3-white" style="max-width: width auto;
+                    margin:auto">
+                    <div class="w3-button w3-right" href="#">English</div>
+                    <div class="w3-button w3-right" href="#">Deutsch</div>
+                    <div class="w3-center w3-padding">HOME</div>
+                </div>
+            </div>
 
-<!-- TODO content alginment-->
-
-<!-- Sidebar / breadcrumbs? -->
-<div class="w3-row">
-<nav class="w3-col m3 w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="/*z-index:3;width:250px" id="mySidebar">
-    <div class="w3-container w3-display-container w3-padding-16">
-        <i onclick="" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-        <h3 class="w3-wide"><b>LOGO</b></h3>
+            <!--Static Icon Bar-->
+            <div class="w3-bar">
+                <div class="w3-bar w3-white">
+                    <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> <span>ACCOUNT
+                            ERSTELLEN</span>
+                    </a>
+                    <a href="#" class="w3-bar-item w3-button w3-left w3-margin-left"><i class="fa fa-search"></i>
+                        <span>SUCHE</span></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
+                        <span>WARENKORB</span></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i>
+                        <span>LOGIN</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Site Logo-->
+        <div class="w3-center w3-white" style="margin-top:32px">
+            <div class="w3-padding-16">
+                <img src="img/nature.png" alt="WEBSHOP Logo" style="width:12%">
+            </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="w3-light-gray w3-padding">
+            <div class="w3-bar w3-light-gray w3-center w3-medium"
+                style="max-width: 1280px; margin-left:auto; margin-right:auto; font-weight:bold;">
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">HOME</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">KATEGORIEN</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">BLOG</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">ABOUT</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">HERSTELLUNG</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">FAQ</a>
+            </div>
+        </div>
+        <!--Breadcrumb-->
+        <div class="w3-white">
+        <div class="w3-bar"style="max-width: 1280px; margin:auto;">
+            <ul class="breadcrumb w3-white" >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Kategorien</a></li>
+                <li>Shirts</li>
+            </ul>
+        </div>
     </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Caps</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Hoodies</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Logsleves</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Pullovers</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">T-shirts</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile">Accessories</a>
+    <!-- TODO content alginment-->
+
+    <!-- Sidebar / breadcrumbs? -->
+    <div class="w3-row">
+        <nav class="w3-col m3 w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="/*z-index:3;width:250px"
+            id="mySidebar">
+            <div class="w3-container w3-display-container w3-padding-16">
+                <i onclick="" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                <h3 class="w3-wide"><b>LOGO</b></h3>
+            </div>
+            <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Caps</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Hoodies</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Logsleves</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Pullovers</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">T-shirts</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Accessories</a>
+            </div>
+        </nav>
+
+        <!--Pick your gender either men, women or child-->
+
+        <img id="women" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Womens_967X813_DE.jpg"
+            alt="womens section">
+        <img id="men" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Mens_967X813_DE.jpg"
+            alt="mens section">
+        <img id="kid" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Kids_967X813_DE.jpg"
+            alt="kids section">
     </div>
-</nav>
-
-<!--Pick your gender either men, women or child-->
-
-    <img id="women" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Womens_967X813_DE.jpg" alt="womens section">
-    <img id="men" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Mens_967X813_DE.jpg" alt="mens section">
-    <img id="kid" class="w3-col w3-container s9 m3 l4 " src="img/PW_Gender_Page_Kids_967X813_DE.jpg" alt="kids section">
-</div>
-<!-- TODO txt database -->
-<!-- TODO categories all products and add attributes for the same -->
-<!-- TODO create functions to sort the same according to their attributes-->
-<script>//TODO change navbar content by clicking on the images and vice versa</script>
-<?php include 'footer.php';?>
+    <!-- TODO txt database -->
+    <!-- TODO categories all products and add attributes for the same -->
+    <!-- TODO create functions to sort the same according to their attributes-->
+    <script>//TODO change navbar content by clicking on the images and vice versa</script>
+    <footer class="">
+        <div class="w3-cell-row w3-black w3-padding-24">
+            <nav class="w3-bar-block w3-cell w3-margin-left" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+    
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+    
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+    
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+    
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+    
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+    
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+    
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+    
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+                
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+    
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+    
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+    
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+    
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+    
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+    
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+    
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+    
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell " role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+    
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+    
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+    
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+    
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+        </div>
+        <div class="w3-center w3-padding-64 w3-black ">
+            <h1 style="font-family: 'Calistoga', cursive;">Firmenname</h1>
+        </div>
+    </footer>
 </body>
+
 </html>
