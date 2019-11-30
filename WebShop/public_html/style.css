@@ -1386,15 +1386,18 @@ ul.breadcrumb {
     color: #01447e;
     text-decoration: underline;
   }
-  .haubt{
-    background-color: white;
-    border: 2px solid black;
+
+
+
+.haubt{
+    background-color:black;
+   
     height: 60px;
     width: 100%;
     padding-top: 10px;
     padding-bottom:15px;
-    padding-right: 500px;
-}
+    padding-right: 400px;}
+
 .ul1{
     float: right;
     margin-top: 2px;}
@@ -1412,7 +1415,7 @@ ul.breadcrumb {
 color : rebeccapurple;   
 margin-bottom: 15px;                }
 .ul1 li a.aktiv{
-    border: 1px solid  black;
+   
 }
 sub{
   background-color:white; 
@@ -1421,12 +1424,12 @@ sub{
   margin-bottom: 10px ;
   padding-top: 0px;
   padding-bottom:10px ;
-  border: 1px solid black;
+
 
 }
 .ul2{
     float: right;
-    margin-right: 500px;
+    margin-right: 700px;
     margin-bottom:20px;
 }
 .ul2 li{
@@ -1438,7 +1441,7 @@ sub{
     font-size:20px;
     margin-right: 100px;
     padding: 10px  10px  ;
-    border: 1px solid black ;
+   
     text-transform:uppercase;
     color:black;
 }
@@ -1465,5 +1468,9 @@ p{text-align: center ;}
     background-color: #f0f0f0;
     height: auto;
     float: left;
-    width: 100%;
+  
+}
+.widt{
+    max-width: 100%;
+   
 }
