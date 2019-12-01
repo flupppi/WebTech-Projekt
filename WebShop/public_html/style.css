@@ -1388,23 +1388,30 @@ ul.breadcrumb {
   }
 
 
-
-.haubt{
+  .haubt{
     background-color:black;
-   
     height: 60px;
-    width: 100%;
     padding-top: 10px;
     padding-bottom:15px;
-    padding-right: 400px;}
+    padding-right: 300px;
+    
+
+
+}
 
 .ul1{
     float: right;
-    margin-top: 2px;}
+    margin-top: 2px;
+
+
+
+
+}
   
 .ul1 li{
     list-style:none;
     display: inline-block;
+  
 }
 .ul1 li a{
     text-decoration: none;
@@ -1414,10 +1421,8 @@ ul.breadcrumb {
   text-transform:uppercase;
 color : rebeccapurple;   
 margin-bottom: 15px;                }
-.ul1 li a.aktiv{
-   
-}
-sub{
+
+.sub{
   background-color:white; 
   height: 60px;
   margin-top: 0px;
@@ -1425,11 +1430,13 @@ sub{
   padding-top: 0px;
   padding-bottom:10px ;
 
+  
+
 
 }
 .ul2{
     float: right;
-    margin-right: 700px;
+    margin-right: 600px;
     margin-bottom:20px;
 }
 .ul2 li{
@@ -1447,13 +1454,14 @@ sub{
 }
 .par{
     background-color:white;
+  
 
 }
 .par p{
 
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 
@@ -1462,7 +1470,7 @@ sub{
     text-align: center ;
 }
 p{text-align: center ;}
-.wraper{
+wraper{
     padding-top:30px;
     padding-bottom: 30px;
     background-color: #f0f0f0;
@@ -1470,7 +1478,10 @@ p{text-align: center ;}
     float: left;
   
 }
-.widt{
-    max-width: 100%;
+.widt{ 
+    max-width: 1280px;
+    margin-left:auto;
+    margin-right: auto;
+
    
 }
