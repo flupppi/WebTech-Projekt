@@ -1,10 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Webshop - FAQ</title>
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/31714.png">
 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+</style>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <!--Top Bar - Language Switch-->
+        <div class="w3-top">
+            <div class="w3-bar">
+                <div class="w3-white" style="max-width: width auto;
+                    margin:auto">
+                    <div class="w3-button w3-right" href="#">English</div>
+                    <div class="w3-button w3-right" href="#">Deutsch</div>
+                    <div class="w3-center w3-padding">FAQ</div>
+                </div>
+            </div>
+
+            <!--Static Icon Bar-->
+            <div class="w3-bar">
+                <div class="w3-bar w3-white">
+                    <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> <span>ACCOUNT
+                            ERSTELLEN</span>
+                    </a>
+                    <a href="#" class="w3-bar-item w3-button w3-left w3-margin-left"><i class="fa fa-search"></i>
+                        <span>SUCHE</span></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
+                        <span>WARENKORB</span></a>
+                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i>
+                        <span>LOGIN</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Site Logo-->
+        <div class="w3-center w3-white" style="margin-top:32px">
+            <div class="w3-padding-16">
+                <img src="img/nature.png" alt="WEBSHOP Logo" style="width:12%">
+            </div>
+        </div>
+        <!--Navigation Bar-->
+        <div class="w3-light-gray w3-padding">
+            <div class="w3-bar w3-light-gray w3-center w3-medium"
+                style="max-width: 1280px; margin-left:auto; margin-right:auto; font-weight:bold;">
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">HOME</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">KATEGORIEN</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">BLOG</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">ABOUT</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">HERSTELLUNG</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item
+                            w3-button w3-mobile">FAQ</a>
+            </div>
+        </div>
+        <!--Breadcrumb-->
+        <div class="w3-white">
+            <div class="w3-bar" style="max-width: 1280px; margin:auto;">
+                <ul class="breadcrumb w3-white">
+                    <li><a href="#">Home</a></li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main class="w3-padding-32" style="min-height:888px">
+        <div class="w3-container" style="max-width: 1180px; margin:auto ">
+            <div class="w3-quarter w3-row w3-padding-48">
+                <aside class=" w3-light-grey w3-bar-block w3-border w3-card w3-round">
+                    <span class="fa-2x w3-bar-item w3-border-bottom w3-border-black">Themen</span>
+                    <a href="#" class=" w3-bar-item w3-button w3-border-bottom">Versand & Bezahlung</a>
+                    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Nachhaltigkeit </a>
+                    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Entsorgung & Produktion</a>
+                    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Dies & Das</a>
+                    <a href="#" class=" w3-bar-item w3-button w3-border-bottom">Seitenaufbau</a>
+                </aside>
+            </div>
+            <div class="w3-threequarter w3-row">
+
+                <div class="w3-row-padding w3-padding-16 w3-container w3-left-align">
+                    <div class="w3-bar w3-border-bottom w3-margin-bottom">
+                        <span class=" fa-2x fa-tex">FRAGEN ZU UNSEREN PRODUKTEN</span>
+
+                    </div>
+                    <section class="w3-content">
+
+                        <button onclick="myFunction('Demo1')"
+                            class="w3-button w3-block w3-light-grey w3-left-align w3-border">Wie sitzen die
+                            Allbirds?</button>
+                        <div id="Demo1" class="w3-hide w3-container">
+                            <p>
+
+                                Die Schuhgrößen variieren je nach Modell, wir bieten jedoch für alle eine normale Breite
+                                und volle Größen. Die Wool Kollektion liegt am Anfang etwas enger an, weitet sich jedoch
+                                naturgemäß mit der Zeit. Das Tree Material passt sich dem Fuß hervorragend an und behält
+                                seine Form.
+
+                                Die meisten Kunden sind mit ihrer jeweiligen vollen Größe bei beiden Materialien
+                                zufrieden. Bei halben Größen wählen sie meist die größere Größe, außer bei den Tree
+                                Runners. Wenn du also breitere Füße und eine halbe Größe hast, wähle am besten die
+                                Größere bei allen Modellen!
+
+                                Du bist noch unsicher? Dann helfen wir dir gerne persönlich. Schreibe unseren Experten
+                                eine E-Mail an help@allbirds.eu und erhalte eine persönliche Beratung!
+                            </p>
+                        </div>
+
+                        <button onclick="myFunction('Demo2')"
+                            class="w3-button w3-block w3-light-grey w3-left-align w3-border">
+                            Dehnen sich meine Schuhe aus?
+                        </button>
+                        <div id="Demo2" class="w3-hide w3-container">
+                            <p>
+
+                                Ausgezeichnete Frage! Wool Schuhe liegen anfangs etwas enger an, sie dehnen sich aber
+                                nach einigen Wochen Tragezeit um etwa ein Viertel der Größe aus. Die Tree Schuhe dagegen
+                                behalten ihre ursprüngliche Form. Dennoch empfehlen wir, sie 1 - 2 Wochen einzulaufen.
+                                Profitipp: Mit Socken laufen sich die Schuhe sogar noch besser ein!
+
+                                Trage die Schuhe überall, auch draußen! Innerhalb von 30 Tagen kannst du sie dennoch
+                                ohne Angabe von Gründen zurückgeben.
+                            </p>
+                        </div>
+                        <button onclick="myFunction('Demo3')"
+                            class="w3-button w3-block w3-light-grey w3-left-align w3-border">Wie sitzen die
+                            Allbirds?</button>
+                        <div id="Demo3" class="w3-hide w3-container">
+                            <p>
+
+                                Die Schuhgrößen variieren je nach Modell, wir bieten jedoch für alle eine normale Breite
+                                und volle Größen. Die Wool Kollektion liegt am Anfang etwas enger an, weitet sich jedoch
+                                naturgemäß mit der Zeit. Das Tree Material passt sich dem Fuß hervorragend an und behält
+                                seine Form.
+
+                                Die meisten Kunden sind mit ihrer jeweiligen vollen Größe bei beiden Materialien
+                                zufrieden. Bei halben Größen wählen sie meist die größere Größe, außer bei den Tree
+                                Runners. Wenn du also breitere Füße und eine halbe Größe hast, wähle am besten die
+                                Größere bei allen Modellen!
+
+                                Du bist noch unsicher? Dann helfen wir dir gerne persönlich. Schreibe unseren Experten
+                                eine E-Mail an help@allbirds.eu und erhalte eine persönliche Beratung!
+                            </p>
+                        </div>
+
+                        <button onclick="myFunction('Demo4')"
+                            class="w3-button w3-block w3-light-grey w3-left-align w3-border">
+                            Dehnen sich meine Schuhe aus?
+                        </button>
+                        <div id="Demo4" class="w3-hide w3-container">
+                            <p>
+
+                                Ausgezeichnete Frage! Wool Schuhe liegen anfangs etwas enger an, sie dehnen sich aber
+                                nach einigen Wochen Tragezeit um etwa ein Viertel der Größe aus. Die Tree Schuhe dagegen
+                                behalten ihre ursprüngliche Form. Dennoch empfehlen wir, sie 1 - 2 Wochen einzulaufen.
+                                Profitipp: Mit Socken laufen sich die Schuhe sogar noch besser ein!
+
+                                Trage die Schuhe überall, auch draußen! Innerhalb von 30 Tagen kannst du sie dennoch
+                                ohne Angabe von Gründen zurückgeben.
+                            </p>
+                        </div>
+                        <button onclick="myFunction('Demo5')"
+                            class="w3-button w3-block w3-light-grey w3-left-align w3-border">Wie sitzen die
+                            Allbirds?</button>
+                        <div id="Demo5" class="w3-hide w3-container">
+                            <p>
+
+                                Die Schuhgrößen variieren je nach Modell, wir bieten jedoch für alle eine normale Breite
+                                und volle Größen. Die Wool Kollektion liegt am Anfang etwas enger an, weitet sich jedoch
+                                naturgemäß mit der Zeit. Das Tree Material passt sich dem Fuß hervorragend an und behält
+                                seine Form.
+
+                                Die meisten Kunden sind mit ihrer jeweiligen vollen Größe bei beiden Materialien
+                                zufrieden. Bei halben Größen wählen sie meist die größere Größe, außer bei den Tree
+                                Runners. Wenn du also breitere Füße und eine halbe Größe hast, wähle am besten die
+                                Größere bei allen Modellen!
+
+                                Du bist noch unsicher? Dann helfen wir dir gerne persönlich. Schreibe unseren Experten
+                                eine E-Mail an help@allbirds.eu und erhalte eine persönliche Beratung!
+                            </p>
+                        </div>
+
+                        <button onclick="myFunction('Demo6')"
+                            class="w3-button w3-block w3-light-grey w3-left-align w3-border">
+                            Dehnen sich meine Schuhe aus?
+                        </button>
+                        <div id="Demo6" class="w3-hide w3-container">
+                            <p>
+
+                                Ausgezeichnete Frage! Wool Schuhe liegen anfangs etwas enger an, sie dehnen sich aber
+                                nach einigen Wochen Tragezeit um etwa ein Viertel der Größe aus. Die Tree Schuhe dagegen
+                                behalten ihre ursprüngliche Form. Dennoch empfehlen wir, sie 1 - 2 Wochen einzulaufen.
+                                Profitipp: Mit Socken laufen sich die Schuhe sogar noch besser ein!
+
+                                Trage die Schuhe überall, auch draußen! Innerhalb von 30 Tagen kannst du sie dennoch
+                                ohne Angabe von Gründen zurückgeben.
+                            </p>
+                        </div>
+
+                </div>
+                <script>
+                    function myFunction(id) {
+                        var x = document.getElementById(id);
+                        if (x.className.indexOf("w3-show") == -1) {
+                            x.className += " w3-show";
+                            x.previousElementSibling.className =
+                                x.previousElementSibling.className.replace("w3-light-grey", "w3-dark-grey");
+                        } else {
+                            x.className = x.className.replace(" w3-show", "");
+                            x.previousElementSibling.className =
+                                x.previousElementSibling.className.replace("w3-dark-grey", "w3-light-grey");
+                        }
+                    }
+                </script>
+                </section>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="">
+        <div class="w3-cell-row w3-black w3-padding-24">
+            <nav class="w3-bar-block w3-cell w3-margin-left" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell" role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+            <nav class="w3-bar-block w3-cell " role="navigation">
+                <a class="w3-bar-item w3-button" href="#">HOME</a>
+
+                <a class="w3-bar-item w3-button" href="#">KATEGORIEN</a>
+
+                <a class="w3-bar-item w3-button" href="#">BLOG</a>
+
+                <a class="w3-bar-item w3-button" href="#">COLLECTIONS</a>
+
+                <a class="w3-bar-item w3-button" href="#">ABOUT</a>
+            </nav>
+        </div>
+        <div class="w3-center w3-padding-64 w3-black ">
+            <h1 style="font-family: 'Calistoga', cursive;">Firmenname</h1>
+        </div>
+    </footer>
 </body>
+
 </html>
