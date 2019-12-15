@@ -1389,5 +1389,6 @@ ul.breadcrumb {
     color: #01447e;
     text-decoration: underline;
   }
-
-
+  .footer-company{
+      font-family: 'Calistoga', cursive;
+  }
