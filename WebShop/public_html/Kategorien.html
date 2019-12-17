@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Kategorien</title>
-<link rel="shortcut icon" type="image/x-icon" href="img/31714.png">
+<link href="img/31714.png" rel="shortcut icon" type="image/x-icon">
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--font awsome-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!--font awesome-->
+<link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css" rel="stylesheet">
 <style>
     body {
         font-family: "Lato", sans-serif
     }
 </style>
-
+<?php
+echo "My first PHP script!";
+?>
 <body>
     <!-- Header -->
 
@@ -25,51 +27,50 @@
         <div class="w3-top">
             <div class="w3-bar w3-white">
                 <div class="w3-white" style="max-width: width auto; margin:auto">
-                    <div class="w3-button w3-right" href="#">English</div>
-                    <div class="w3-button w3-right" href="#">Deutsch</div>
+                    <div class="w3-button w3-right">English</div>
+                    <div class="w3-button w3-right">Deutsch</div>
                     <div class="w3-center w3-padding">KATEGORIEN</div>
-
-
                 </div>
             </div>
 
             <!--Static Icon Bar-->
             <div class="w3-bar">
                 <div class="w3-bar w3-white">
-                    <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> <span>ACCOUNT
+                    <a class="w3-bar-item w3-button w3-right" href="#"> <i class="fa fa-user"></i> <span>ACCOUNT
                             ERSTELLEN</span>
                     </a>
-                    <a href="#" class="w3-bar-item w3-button w3-left w3-margin-left"><i class="fa fa-search"></i>
+                    <a class="w3-bar-item w3-button w3-left w3-margin-left" href="#"><i class="fa fa-search"></i>
                         <span>SUCHE</span></a>
-                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
+                    <a class="w3-bar-item w3-button w3-right" href="#"><i class="fa fa-shopping-basket"></i>
                         <span>WARENKORB</span></a>
-                    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i>
+                    <a class="w3-bar-item w3-button w3-right" href="#"><i class="fa fa-sign-in"></i>
                         <span>LOGIN</span></a>
+
                 </div>
             </div>
         </div>
         <!--Site Logo-->
         <div class="w3-center w3-white" style="margin-top:32px">
             <div class="w3-padding-16">
-                <img src="img/nature.png" alt="WEBSHOP Logo" style="width:12%">
+                <img alt="WEBSHOP Logo" src="img/nature.png" style="width:12%">
             </div>
         </div>
         <!--Navigation Bar-->
         <div class="w3-light-gray w3-padding w3-hide-small">
             <div class="w3-bar w3-light-gray w3-center w3-medium"
                 style="max-width: 1280px; margin-left:auto; margin-right:auto; font-weight:bold;">
-                <a href="index.html" style="width:16.66%" class="w3-bar-item
-                            w3-button w3-mobile">HOME</a>
-                <a href="Kategorien.html" style="width:16.66%" class="w3-bar-item
-                            w3-button w3-mobile">KATEGORIEN</a>
-                <a href="#" style="width:16.66%" class="w3-bar-item
-                            w3-button w3-mobile">BLOG</a>
-                <a href="#" style="width:16.66%" class="w3-bar-item
-                            w3-button w3-mobile">ABOUT</a>
-                <a href="#" style="width:16.66%" class="w3-bar-item
-                            w3-button w3-mobile">INFOSEITE</a>
-                <a href="#" style="width:16.66%" class="w3-bar-item
-                            w3-button w3-mobile">FAQ</a>
+                <a class="w3-bar-item
+                            w3-button w3-mobile" href="index.html" style="width:16.66%">HOME</a>
+                <a class="w3-bar-item
+                            w3-button w3-mobile" href="Kategorien.html" style="width:16.66%">KATEGORIEN</a>
+                <a class="w3-bar-item
+                            w3-button w3-mobile" href="#" style="width:16.66%">BLOG</a>
+                <a class="w3-bar-item
+                            w3-button w3-mobile" href="#" style="width:16.66%">ABOUT</a>
+                <a class="w3-bar-item
+                            w3-button w3-mobile" href="#" style="width:16.66%">INFOSEITE</a>
+                <a class="w3-bar-item
+                            w3-button w3-mobile" href="#" style="width:16.66%">FAQ</a>
             </div>
         </div>
         <!--Breadcrumb-->
@@ -82,8 +83,8 @@
                     <i class="fab fa-youtube w3-right"></i>
                     <i class="fab fa-instagram w3-right"></i>
                     <i class="fab fa-facebook w3-right"></i>
-                    <select style="size: 200px" class="w3-select w3-right" name="option">
-                        <option value="" disabled selected>Choose your option</option>
+                    <select class="w3-select w3-right" name="option" style="size: 200px">
+                        <option disabled selected value="">Choose your option</option>
                         <option value="1">Preis desc</option>
                         <option value="2">Preis asc</option>
                         <option value="3">Lexikographisch asc</option>
@@ -101,21 +102,21 @@
     <main class="w3-container w3-padding-48">
         <div class="w3-row w3-padding-16" style="max-width: 1280px; margin: auto;">
             <!--Pick your gender either men, women or child but we don't target childs as customers-->
-            <div id="memes" class="w3-col l2 w3-light-gray w3-card w3-hide-small">
+            <div class="w3-col l2 w3-light-gray w3-card w3-hide-small" id="memes">
                 <ul class="w3-ul">
                     <li><a class="w3-hover-black">Mens</a></li>
                     <li><a class="w3-hover-black">Womes</a></li>
                 </ul>
             </div>
             <div class="w3-center" id="content" style="z-index: -1">
-                <img id="women" class="w3-col w3-container s12 m3 l5 " src="img/PW_Gender_Page_Womens_967X813_DE.jpg"
-                    alt="womens section" onclick="changeWomens()">
-                <img id="men" class="w3-col w3-container s12 m3 l5 " src="img/PW_Gender_Page_Mens_967X813_DE.jpg"
-                    alt="mens section" onclick="changeMens()">
+                <img alt="womens section" class="w3-col w3-container s12 m3 l5 " id="women"
+                    onclick="changeWomens()" src="img/PW_Gender_Page_Womens_967X813_DE.jpg">
+                <img alt="mens section" class="w3-col w3-container s12 m3 l5 " id="men"
+                    onclick="changeMens()" src="img/PW_Gender_Page_Mens_967X813_DE.jpg">
             </div>
 
             <!-- pagination -->
-            <div id="pagination" class="w3-center w3-padding-24">
+            <div class="w3-center w3-padding-24" id="pagination">
 
             </div>
         </div>
