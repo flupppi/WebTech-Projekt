@@ -87,6 +87,9 @@ button,input,select,textarea,optgroup{
     font:inherit;
     margin:0
 }
+.w3-bold{
+    font-weight: bold;
+}
 optgroup{
     font-weight:bold
 }
