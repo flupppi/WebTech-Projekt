@@ -185,6 +185,9 @@ hr{
     max-width:100%;
     height:auto
 }
+.w3-banner{
+    width:100%;
+}
 img{
     vertical-align:middle
 }
@@ -567,6 +570,10 @@ a{
 .w3-content{
     max-width:980px
 }
+.w3-content-margin{
+    max-width:1280px;
+    margin: auto;
+}
 .w3-auto{
     max-width:1140px
 }
@@ -601,6 +608,16 @@ a{
     }
 }
 @media (max-width:600px){
+
+    .w3-sidebar-mobile{
+        height:100%;
+        width:200px;
+        background-color:#fff;
+        position:fixed!important;
+        z-index:1;
+        overflow:auto
+    }
+
     .w3-modal-content{
         margin:0 10px;
         width:auto!important
@@ -1017,6 +1034,9 @@ a{
 }
 .w3-margin-top{
     margin-top:16px!important
+}
+.w3-big-margin-top{
+    margin-top:32px!important;
 }
 .w3-margin-bottom{
     margin-bottom:16px!important
