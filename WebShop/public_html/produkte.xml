@@ -17,7 +17,7 @@
         <price>30</price>
         <productNumber>2</productNumber>
         <pictures>
-            <pic color="black tuerkis">deluxe_shirt_black_tuerkis_large.jpg</pic><!--ein beanie ist eine Cap-->
+            <pic color="black tuerkis">deluxe_shirt_black_tuerkis_large.jpg</pic> <!--ein beanie ist eine Cap-->
             <pic color="grey black">deluxe_shirt_grey_black_large.jpg</pic>
             <pic color="grey yellow">deluxe_shirt_grey_yellow_large.jpg</pic>
             <pic color="white black">deluxe_shirt_white_black_large.jpg</pic>
