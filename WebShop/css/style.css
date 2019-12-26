@@ -1456,3 +1456,8 @@ a{
   .footer-company{
       font-family: 'Calistoga', cursive;
   }
+/*fokus eigenschaften - WCAG*/
+  .search-input:focus {
+    background: lightblue;
+    color: black;
+  }

@@ -12,33 +12,43 @@
 <body>
     <!-- Header -->
 
-    <section>
+    <section id="header">
         <!--Top Bar - Language Switch-->
-        <header class="w3-top ">
-            <nav class="w3-bar w3-white">
-                <nav class="w3-button w3-right w3-mobile">English</nav>
-                <nav class="w3-button w3-right">Deutsch</nav>
-                <header class="w3-center w3-padding">HOME</header>
+        <header id="top" class="w3-top">
+            <nav role="menubar" class="w3-bar w3-white">
+                <nav role="button" tabindex="0" class="w3-button w3-right w3-mobile">English</nav>
+                <nav role="button" tabindex="0" class="w3-button w3-right">Deutsch</nav>
+                <header role="heading" class="w3-center w3-padding">HOME</header>
             </nav>
 
             <!--Static Icon Bar-->
 
-            <nav class="w3-bar w3-white">
-                <a href="#" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user"></i> ACCOUNT
+            <nav role="menubar" class="w3-bar w3-white">
+                <a href="#" role="button" tabindex="0" class="w3-bar-item w3-button w3-right"> <i
+                        class="fa fa-user"></i> ACCOUNT
                     ERSTELLEN
                 </a>
-                <a href="#" class="w3-bar-item w3-button w3-left w3-margin-left"><i class="fa fa-search"></i>
-                    SUCHE</a>
-                <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-shopping-basket"></i>
+
+                <form role="searchbox" tabindex="0" action="/action_page.php"
+                    class="w3-hover-white w3-bar-item w3-button w3-left w3-margin-left">
+                    <input class="search-input" type="text" placeholder="Search.." name="search" id="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <label for="search" class="w3-text-grey">Produktsuche</label>
+                </form>
+
+                <a href="#" role="button" tabindex="0" class="w3-bar-item w3-button w3-right"><i
+                        class="fa fa-shopping-basket"></i>
                     WARENKORB</a>
-                <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i>
+                <a href="#" role="button" tabindex="0" class="w3-bar-item w3-button w3-right"><i
+                        class="fa fa-sign-in"></i>
                     LOGIN</a>
             </nav>
 
         </header>
         <!--Site Logo-->
         <figure class="w3-center w3-big-margin-top w3-white w3-hide-small w3-padding-32">
-            <img src="public_html/img/nature.png" alt="WEBSHOP Logo" style="width:180px">
+            <img src="public_html/img/nature.png" alt="webshop logo image" style="width:180px">
+            <figcaption class="w3-text-gray">Shop for sustainable Clothing</figcaption>
         </figure>
         <!--Navigation Bar-->
         <header class="w3-light-gray w3-padding w3-hide-small">
@@ -117,13 +127,13 @@
 
             </div>
             <div class="w3-card-4 w3-margin w3-white w3-row">
-                    <div class="w3-container">
-                        <h3><b>BLOG ENTRY</b></h3>
-                        <h5>Title description, <span class="w3-opacity">April
-                                2, 2014</span></h5>
-                    </div>
+                <div class="w3-container">
+                    <h3><b>BLOG ENTRY</b></h3>
+                    <h5>Title description, <span class="w3-opacity">April
+                            2, 2014</span></h5>
+                </div>
 
-                    <div class="w3-twothird">
+                <div class="w3-twothird">
 
                     <div class="w3-container">
                         <p>Mauris neque quam, fermentum ut nisl vitae,
@@ -178,10 +188,11 @@
                 </div>
                 <div class="w3-quarter ">
                     <div class=" w3-margin">
-                        <img src="public_html/img/deluxe_shirt_black_tuerkis_large.jpg" style="width:100%" alt="polo shirt">
+                        <img src="public_html/img/deluxe_shirt_black_tuerkis_large.jpg" style="width:100%"
+                            alt="polo shirt">
                         <div class="w3-container w3-center">
                             <h5>CLASSICS BRAND SHIRT</h5>
-                                <h6>30€</h6>
+                            <h6>30€</h6>
                         </div>
                     </div>
                 </div>
@@ -198,7 +209,8 @@
 
                 <div class="w3-quarter">
                     <div class=" w3-margin">
-                        <img src="public_html/img/deluxe_polo_black_white_large.jpg" style="width:100%" alt="polo shirt">
+                        <img src="public_html/img/deluxe_polo_black_white_large.jpg" style="width:100%"
+                            alt="polo shirt">
                         <div class="w3-container w3-center">
                             <h5>CLASSICS BRAND SHIRT</h5>
                             <h6>30€</h6>
@@ -207,7 +219,8 @@
                 </div>
                 <div class="w3-quarter">
                     <div class="w3-margin">
-                        <img src="public_html/img/deluxe_polo_black_white_large.jpg" style="width:100%" alt="polo shirt">
+                        <img src="public_html/img/deluxe_polo_black_white_large.jpg" style="width:100%"
+                            alt="polo shirt">
                         <div class="w3-container w3-center">
                             <h5>CLASSICS BRAND SHIRT</h5>
                             <h5>30€</h5>
@@ -229,11 +242,13 @@
             <nav class="w3-col l1 m6 s12 w3-center"><a href="public_html/Infoseite.html">Info</a></nav>
             <nav class="w3-col l1 m6 s12 w3-center"><a href="public_html/Kategorien.html">Kategorien</a></nav>
             <nav class="w3-col l1 m6 s12 w3-center"><a href="public_html/Produktseite.html">Produktseite</a></nav>
-            <nav class="w3-col l1 m6 s12 w3-center"><a href="public_html/Produktübersicht.html">Produktübersicht</a></nav>
+            <nav class="w3-col l1 m6 s12 w3-center"><a href="public_html/Produktübersicht.html">Produktübersicht</a>
+            </nav>
         </nav>
         <div class="w3-center w3-padding-64 w3-black ">
-            <h1 class="footer-company" >Firmenname</h1>
+            <h1 class="footer-company">Firmenname</h1>
         </div>
     </footer>
 </body>
+
 </html>
