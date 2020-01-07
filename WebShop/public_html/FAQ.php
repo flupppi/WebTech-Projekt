@@ -1,6 +1,5 @@
 <?php
-
 include "header.php";
-include "Infoseite.html";
+include "FAQ.html";
 include "footer.php";
 ?>;
