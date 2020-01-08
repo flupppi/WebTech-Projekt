@@ -1,43 +1,36 @@
 <?php
+
+session_start();
+
 if(isset($_POST['login-submit'])){
 
-    require 'dbh.inc.php';
+    require_once 'usersHandler.inc.php';
 
-     $mailuid = $_POST['mailuid'];
-     $password = $_POST['pwd'];
+     $mail     = isset($_POST['mailuid']) ? $_POST["mailuid"] : null;
+     $password = isset($_POST['pwd'])     ? $_POST["pwd"]     : null;
 
-    if(empty($mailuid) || empty($password)) {
+    if(empty($mail) || $mail === null || empty($password) || $password === null) {
         header("Location: ../index.php?error=emptyfields");
-    }else {
-        $sql = "SELECT * FROM users WHERE uidUsers=? or emailUsers=?";
-        $stmt = mysqli_stmt_init($conn);
-        if(!mysqli_stmt_prepare($stmt,$sql)){
-            header("Location: ../index.php?error=sqlerror");
-            exit();
-        }else{
-            mysqli_stmt_bind_param($stmt,"ss",$mailuid,$mailuid);
-            mysqli_stmt_bind_param($stmt);
-            $result = mysqli_stmt_get_result($stmt);
-            if ($row = mysqli_fetch_assoc($result)) {
-                $pwdCheck = password_verify($password, $row['pwdUsers']);
+    } else {
+            if (emailExists($mail)) {
+                $user=getUserByMail($mail);
+                $pwdCheck = password_verify($password, $user->getPassword());
                 if ($pwdCheck == false) {
                     header("Location: ../index.php?error=wrongpwd");
                     exit();
                 }
-                else if ($pwdCheck == true){
-                    session_status();
-                    $_SESSION['userId'] = $row['idUsers'];
-                    $_SESSION['userUid'] = $row['uidUsers'];
+                else if ($pwdCheck === true){
+                    $_SESSION['userId'] = $user->getUsername();
 
                     header("Location: ../index.php?login=success");
                     exit();
                 }
-            }else {
+            } else {
                 header("Location: ../index.php?error=nouser");
                 exit();
             }
         }
-    }
+
 }else{
     header("Location: ../public_html/index.php");
 }

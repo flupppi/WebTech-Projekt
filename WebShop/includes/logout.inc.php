@@ -1,4 +1,6 @@
 <?php
+require 'usersHandler.inc.php';
+saveArr($users);
 session_start();
 session_unset();
 session_destroy();

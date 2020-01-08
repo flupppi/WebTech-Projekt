@@ -1,5 +1,8 @@
 <?php
-    include "header.php"
+session_start();
+echo "<pre>";
+print_r($_SESSION);
+include "header.php"
 ?>
 <main>
     <?php
