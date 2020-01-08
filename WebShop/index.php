@@ -1,6 +1,5 @@
-<?php
 
-include "public_html/header.php";
+
+<?php
 include "index.html";
-include "public_html/footer.php";
-?>;
+
