@@ -1,0 +1,63 @@
+<section id="header">
+    <!--Top Bar - Language Switch-->
+    <header class="w3-top">
+        <nav class="w3-bar w3-white w3-center"> Webshop</nav>
+
+        <!--Static Icon Bar-->
+
+        <nav class="w3-bar w3-white w3-center">
+
+                <button class="w3-button" onclick="myFunction()">
+                     <i class="fa fa-bars"></i>
+                </button>
+                <nav  id="demo"class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <form  role="search" action="#" class="w3-bar  w3-hover-white w3-border-light-grey  ">
+                        <label>
+                            <input class="w3-input w3-bar-item" type="text" placeholder="Search.." name="search" id="search">
+                        </label>
+                        <button class="w3-bar-item w3-button w3-green" type="submit"><i class="fa fa-search"></i></button>
+
+                    </form>
+                    <a class="w3-bar-item   w3-button" href="index.php">HOME</a>
+                    <a class="w3-bar-item   w3-button" href="Kategorien.php">KATEGORIEN</a>
+                    <a class="w3-bar-item   w3-button" href="Blogübersicht.php">BLOG</a>
+                    <a class="w3-bar-item   w3-button" href="About.php">ABOUT</a>
+                    <a class="w3-bar-item   w3-button" href="Infoseite.php">INFOSEITE</a>
+                    <a class="w3-bar-item   w3-button" href="FAQ.php">FAQ</a>
+                    <nav role="navigation">
+                        <a role="link" href="" tabindex="0" class="w3-button">Deutsch</a>
+                        <a role="link" href="" tabindex="0" class="w3-button">English</a>
+                    </nav>
+                </nav>
+
+
+            <button role="button" tabindex="0" class=" w3-button "><i class="fa fa-user"></i>
+            </button>
+            <button onclick="" role="button" tabindex="0" class=" w3-button  "><i
+                    class="fa fa-shopping-basket"></i>
+            </button>
+            <button  role="button" tabindex="0" class=" w3-button "><i
+                    class="fa fa-sign-in"></i>
+            </button>
+        </nav>
+
+    </header>
+
+    <!--Site Logo-->
+    <figure class="w3-center w3-big-margin-top w3-white w3-padding-48">
+        <figcaption class="w3-text-gray">Shop for sustainable Clothing</figcaption>
+    </figure>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</section>
+
