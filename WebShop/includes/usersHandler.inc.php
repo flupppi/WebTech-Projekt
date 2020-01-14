@@ -1,3 +1,4 @@
+@ -0,0 +1,44 @@
 <?php
 require_once("users.php");
 //global  $users;
@@ -21,7 +22,7 @@ function usernameExists($name)
             return true;
         }
     }
-        return false;
+    return false;
 }
 function emailExists($mail)
 {  global $users;

@@ -41,7 +41,7 @@ if (isset($_POST['signup-submit'])) {
             $users[count($users) + 1] = new users($username, $email, $hashedPwd);
 
             //var_dump($users);
-            saveArr($users);
+            savearr($users);
             header("Location ../signup.php?signup=success");
             exit();
         }
