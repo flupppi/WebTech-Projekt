@@ -20,12 +20,11 @@ require "header.php";
             }else if ($_GET['error'] == "userTaken") {
                 echo '<p class="w3-red">Username is already taken!</p>';
             }
-        } elseif ($_GET['error'] == "success"){
+        } elseif ($_GET['signup'] == "success"){
             echo '<p class="w3-green">Signup successful!</p>';
-
         }
     ?>
-    <form action="../includes/signup.inc.php" method="post">
+    <form action="includes/signup.inc.php" method="post">
         <input type="text" name="uid" placeholder="Username">
         <input type="text" name="mail" placeholder="E-mail">
         <input type="password" name="pwd" placeholder="Password">
