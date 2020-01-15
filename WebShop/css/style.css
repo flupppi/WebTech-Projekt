@@ -1459,3 +1459,6 @@ a{
     color: black;
   }
 
+  .w3-nouline{
+      text-decoration: none;
+  }
