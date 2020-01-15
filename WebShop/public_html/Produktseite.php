@@ -96,35 +96,35 @@ include "header.php";
                         SIZE
                     </b>
                 </label>
-                <label class="w3-right w3-bar-item">
+                <nav class="w3-right w3-bar-item">
                     <button class="w3-bar-item w3-button">XS</button>
                     <button class="w3-bar-item w3-button">S</button>
                     <button class="w3-bar-item w3-button">M</button>
-                </label>
+                </nav>
             </div>
 
-            <div class="w3-bar w3-border-top">
-                <label class="w3-left w3-bar-item w3-padding-16">
+            <footer class="w3-bar w3-border-top">
+                <div class="w3-left w3-bar-item w3-padding-16">
                     <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">-</button>
-                    <span class="w3-bar-item w3-large w3-bold">1</span>
+                    <label class="w3-bar-item w3-large w3-bold">1</label>
                     <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">+</button>
-                </label>
+                </div>
                 <button class=" w3-margin w3-btn w3-round w3-black w3-right w3-bar-item">IN DEN WARENKORB</button>
-            </div>
+            </footer>
         </section>
     </div>
 
 
 
         <section class="w3-padding-48 w3-content-margin w3-row " style="max-width: 1180px; margin-left: auto; margin-right: auto; ">
-            <div class="w3-bar">
+            <header class="w3-bar ">
                 <span class=" fa-2x fa-tex w3-text-green">HIER GIBTS NOCH MEHR!</span>
                 <button class=" w3-border w3-bar-item w3-button w3-right">
                     <a class="w3-nouline" href="Produktübersicht.php">MEHR</a>
                 </button>
-            </div>
+            </header>
             <section class="w3-row w3-padding">
-                <div class="w3-quarter  "> <a  class="w3-nouline" href="Produktseite.php">
+                <article class="w3-quarter  "> <a  class="w3-nouline" href="Produktseite.php">
                         <figure class=" w3-margin">
 
                             <img src="img/items/BasicTShirtLouis.jpg"  style="width:100%" alt="shirt türkis">
@@ -134,8 +134,8 @@ include "header.php";
                             </figcaption>
                         </figure>
                     </a>
-                </div>
-                <div class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                </article>
+                <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
                         <figure class=" w3-margin">
                             <img src="img/items/carla_Ecru.jpg" style="width:100%" alt="shirt türkis">
                             <figcaption class="w3-container w3-center w3-medium">
@@ -143,8 +143,8 @@ include "header.php";
                                 <span class="w3-row">55.00€</span>
                             </figcaption>
                         </figure></a>
-                </div>
-                <div class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                </article>
+                <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
                         <figure class=" w3-margin">
                             <img src="img/items/carla_sand.jpg" style="width:100%" alt="shirt türkis">
                             <figcaption class="w3-container w3-center w3-medium">
@@ -153,8 +153,8 @@ include "header.php";
                             </figcaption>
                         </figure>
                     </a>
-                </div>
-                <div class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                </article>
+                <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
                         <figure class=" w3-margin">
                             <img src="img/items/dariadeh_ayla_top_lowres.jpg" style="width:100%" alt="shirt türkis">
                             <figcaption class="w3-container w3-center w3-medium">
@@ -163,7 +163,7 @@ include "header.php";
                             </figcaption>
                         </figure>
                     </a>
-                </div
+                </article
 
             </section>
         </section>

@@ -12,8 +12,11 @@ include "header.php";
             <li>About</li>
         </ul>
     </nav>
-    <div class="w3-display-container w3-center">
+    <div class="w3-display-container w3-center w3-hide-small ">
         <img src="img/About/Banner.jpg" style="width:100%;" alt="banner">
+    </div>
+    <div class="w3-display-container w3-center w3-hide-medium w3-hide-large">
+        <img src="img/About/MobileBanner.jpg" style="width:100%;" alt="banner">
     </div>
     <section class="w3-row-padding w3-padding-64 w3-container">
         <article class="w3-content" style="max-width: 650px;">
