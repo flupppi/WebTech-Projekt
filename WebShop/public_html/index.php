@@ -8,147 +8,170 @@
 <!--Header-->
 <main>
     <!-- Automatic Slideshow Images -->
-    <div class="w3-display-container w3-center">
-        <img  class="w3-banner" src="img/home-slider-slide-1.jpg" alt="Website Banner">
-    </div>
-    <section class="w3-content-margin">
-        <main class="w3-card w3-margin w3-white w3-row">
-            <header class="w3-container">
-                <h3><b>BLOG ENTRY</b></h3>
-                <h5>Title description, <span class="w3-opacity">April
-                            2, 2014</span></h5>
-            </header>
+    <figure class="w3-content w3-section w3-display-container w3-hide-small">
 
-            <article class="w3-twothird w3-container">
+        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-1.jpg" ">
+        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-2.jpg">
+        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-3.jpg">
+        <label class="w3-padding w3-display-bottomleft  w3-funky fa-5x w3-text-white ">Sustainable Fashion!</label>
 
-                <p>Mauris neque quam, fermentum ut nisl vitae,
-                    convallis maximus nisl. Sed mattis nunc id lorem
-                    euismod
-                    placerat. Vivamus porttitor magna enim, ac
-                    accumsan tortor cursus at. Phasellus sed
-                    ultricies mi
-                    non
-                    congue ullam corper. Praesent tincidunt sed
-                    tellus ut rutrum. Sed vitae justo condimentum,
-                    porta lectus vitae, ultricies congue gravida
-                    diam
-                    non
-                    fringilla.
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad
-                    minim veniam, quis nostruds
+    </figure>
+
+    <script src="../js/carousel.js"></script>
+    <figure class="w3-content w3-hide-medium w3-hide-large">
+        <img class="w3-banner" src="img/mobile-home.jpg">
+    </figure>
+    <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
+        <header class="w3-container">
+            <h2 class="w3-xlarge w3-bold w3-funky w3-uline">Fair Fashion Guide</h2>
+            <h3 class="w3-large">ekoehrer, <span class="w3-opacity">27/08/2017</span></h3>
+        </header>
+
+        <section class="w3-twothird w3-container">
+            <h4 class="w3-large w3-bold w3-funky">„Trends ändern sich, Persönlichkeit und Attitude bleiben“</h4>
+            <br>
+            Experten-Interviews mit Martina Glomb, Marie Nasemann, Kirsten Brodde, Max Gilgenmann und Magdalena
+            Schaffrin sowie Tipps zum fairen Modekonsum aus dem Fair Fashion Guide. Webseite und Printmagazin sind
+            in Zusammenarbeit mit FEMNET e. V. und dem Beneficial Design Institute entstanden. Hier ein Auszug mit
+            Links zum Weiterschmökern im Original…
+            <br></p>
+            <nav class="w3-row w3-col m8 s12">
+                <p>
+                    <button class="w3-button w3-padding-large
+                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
+                            »</a></button>
                 </p>
-                <footer class="w3-row w3-col">
-                    <p>
-                        <button class="w3-button w3-padding-large
-                                            w3-white w3-border"><b>READ MORE »</b></button>
-                    </p>
-                </footer>
-            </article>
-            <aside class="w3-third">
-                <img class="w3-banner" src="img/man_hat.jpg" alt="Blog Picture">
-            </aside>
-        </main>
-        <main class="w3-card w3-margin w3-white w3-row">
-            <header class="w3-container">
-                <h3><b>BLOG ENTRY</b></h3>
-                <h5>Title description, <span class="w3-opacity">April
-                            2, 2014</span></h5>
-            </header>
+            </nav>
 
-            <article class="w3-twothird w3-container">
+        </section>
+        <section class="w3-third">
+            <img class="w3-image" src="../text/blog/fair_fashion_guide.jpg" alt="future fashion forward e. V.">
+            <figcaption class="w3-small">Trendy und nachhaltig: Wie das geht zeigt der Fair Fashion Guide.
+            </figcaption>
+        </section>
+    </article>
 
-                <p>Mauris neque quam, fermentum ut nisl vitae,
-                    convallis maximus nisl. Sed mattis nunc id lorem
-                    euismod
-                    placerat. Vivamus porttitor magna enim, ac
-                    accumsan tortor cursus at. Phasellus sed
-                    ultricies mi
-                    non
-                    congue ullam corper. Praesent tincidunt sed
-                    tellus ut rutrum. Sed vitae justo condimentum,
-                    porta lectus vitae, ultricies congue gravida
-                    diam
-                    non
-                    fringilla.
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad
-                    minim veniam, quis nostruds
+
+    <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
+        <header class="w3-container">
+            <h2 class="w3-xlarge w3-bold w3-funky w3-uline">Fashion Revolution Week</h2>
+            <h3 class="w3-large">ekoehrer, <span class="w3-opacity">16/04/2017</span></h3>
+        </header>
+
+        <section class="w3-twothird w3-container">
+            <h4 class="w3-large w3-bold w3-funky">Countdown</h4>
+            <p class="w3-padding">
+
+                In 8 Tagen, also am 24. April, startet die Fashion Revolution Week weltweit in Memorian an den
+                Einsturz der Rana Plaza-Textilfabriken 2013 in Bangladesch.<br> Damals wurden über 1138 Menschen
+                unter
+                den Trümmern begraben, rund 2500 wurden zum Teil schwer verletzt. Damit so etwas nie wieder passiert
+                macht die Fashion Revolution-Bewegungen jedes Jahr zum Jahrestag Aktionen in der ganzen Welt…
+
+            </p>
+            <nav class="w3-row w3-col m8 s12">
+                <p>
+                    <button class="w3-button w3-padding-large
+                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
+                            »</a></button>
                 </p>
-                <footer class="w3-row w3-col">
-                    <p>
-                        <button class="w3-button w3-padding-large
-                                            w3-white w3-border"><b>READ MORE »</b></button>
-                    </p>
-                </footer>
+            </nav>
+        </section>
+        <section class="w3-third">
+            <img class="w3-image" src="../text/blog/quote_ellenköhrer.jpg" alt="future fashion forward e. V.">
+            <figcaption class="w3-hide">future fashion forward e. V.</figcaption>
+        </section>
+    </article>
+
+
+    <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
+        <header class="w3-container">
+            <h2 class="w3-xlarge w3-bold w3-funky w3-uline">Interview</h2>
+            <h3 class="w3-large">ekoehrer, <span class="w3-opacity">03/04/2017</span></h3>
+        </header>
+
+        <section class="w3-twothird w3-container">
+            <h4 class="w3-large w3-bold w3-funky">MUD JEANS Blog: Interview with Ellen Köhrer</h4>
+            <p class="w3-padding">
+
+                Fashion Made Fair’ is a book regarding ethical and eco-friendly fashion labels. The authors of the
+                book, journalist Ellen Köhrer and Magdalena Schaffrin, founder of the Greenshowroom for sustainable
+                high-end fashion, put emphasis on presenting sustainable fashion in a modern way. The book is an
+                excellent selection of 33 designers and labels from all over the world that put equal emphasis on
+                sustainability as creating well-designed clothing.
+                The book lets you discover fair trade and sustainable fashion labels from more established brands
+                like Vivienne Westwood, Freitag and Patagonia, but it also features a range of exciting younger
+                fashion labels. The book itself features well-written pages, including expert talks explaining all
+                aspects of sustainability, in combination with the beautiful imagery. Excited as we were to see
+                several pages dedicated to Mud Jeans, we set up an interview with author Ellen Köhrer which you will
+                find below…
+
+            </p>
+            <nav class="w3-row w3-col m8 s12">
+                <p>
+                    <button class="w3-button w3-padding-large
+                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
+                            »</a></button>
+                </p>
+            </nav>
+        </section>
+        <section class="w3-third">
+            <img class="w3-image w3-sha" src="../text/blog/MUD-JEANS-Blog_Interview-moi.jpg"
+                 alt="future fashion forward e. V.">
+            <figcaption class="w3-hide">FASHION MADE FAIR</figcaption>
+        </section>
+    </article>
+
+    <section class="w3-padding-48 w3-content-margin w3-row ">
+        <header class="w3-bar ">
+            <span class=" fa-2x fa-tex w3-text-green w3-funky">Hier gehts zu den Klamotten!</span>
+            <button class=" w3-border w3-bar-item w3-button w3-right">
+                <a class="w3-nouline" href="Produktübersicht.php">MEHR</a>
+            </button>
+        </header>
+        <section class="w3-row w3-padding">
+            <article class="w3-quarter  "> <a  class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+
+                        <img src="img/items/BasicTShirtLouis.jpg"  style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Unisex Basic T-Shirt Cashew
+                            <span class="w3-row">39.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
             </article>
-            <aside class="w3-third">
-                <img class="w3-banner" src="img/man_hat.jpg" alt="Blog Picture">
-            </aside>
-        </main>
-    </section>
-    <section class=" w3-row w3-padding-48 w3-content-margin">
+            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+                        <img src="img/items/carla_Ecru.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Carla Waffle Longsleeve Ecru
+                            <span class="w3-row">55.00€</span>
+                        </figcaption>
+                    </figure></a>
+            </article>
+            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+                        <img src="img/items/carla_sand.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Carla Waffle Longsleeve Sand
+                            <span class="w3-row">39.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+                        <img src="img/items/dariadeh_ayla_top_lowres.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Alya Top White
+                            <span class="w3-row">39.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article
 
-        <nav class="w3-bar ">
-            <span class="  w3-margin-left  w3-xlarge fa-tex w3-text-deep-orange ">HIER GEHTS ZU DEN KLAMOTTEN</span>
-            <button class="w3-border w3-bar-item w3-button w3-right w3-margin-right">
-                <a class="">MEHR</a></button>
-        </nav>
-        <article class="w3-quarter">
-            <figure class=" w3-margin">
-                <img class="w3-banner" src="img/deluxe_polo_mint_white_large.jpg" alt="polo shirt">
-                <figcaption class="w3-container w3-center">
-                    <h5>CLASSICS BRAND SHIRT</h5>
-                    <h6>30€</h6>
-                </figcaption>
-            </figure>
-        </article>
-
-        <article class="w3-quarter">
-            <figure class=" w3-margin">
-                <img class="w3-banner" src="img/deluxe_polo_mint_white_large.jpg" alt="polo shirt">
-                <figcaption class="w3-container w3-center">
-                    <h5>CLASSICS BRAND SHIRT</h5>
-                    <h6>30€</h6>
-                </figcaption>
-            </figure>
-        </article>
-
-        <article class="w3-quarter">
-            <figure class=" w3-margin">
-                <img class="w3-banner" src="img/deluxe_polo_mint_white_large.jpg" alt="polo shirt">
-                <figcaption class="w3-container w3-center">
-                    <h5>CLASSICS BRAND SHIRT</h5>
-                    <h6>30€</h6>
-                </figcaption>
-            </figure>
-        </article>
-        <article class="w3-quarter">
-            <figure class=" w3-margin">
-                <img class="w3-banner" src="img/deluxe_polo_mint_white_large.jpg" alt="polo shirt">
-                <figcaption class="w3-container w3-center">
-                    <h5>CLASSICS BRAND SHIRT</h5>
-                    <h6>30€</h6>
-                </figcaption>
-            </figure>
-        </article>
-    </section>
+        </section>
 </main>
 
 <?php

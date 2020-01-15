@@ -104,6 +104,8 @@ include "header.php";
                 </div>
 
             </section>
+
+
             <section class="w3-row w3-padding">
                 <div class="w3-third  "> <a class="w3-nouline" href="Produktseite.php">
                         <figure class=" w3-margin">

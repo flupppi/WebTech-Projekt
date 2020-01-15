@@ -116,7 +116,7 @@ include "header.php";
 
 
 
-        <section class="w3-padding-48 w3-content-margin w3-row " style="max-width: 1180px; margin-left: auto; margin-right: auto; ">
+        <section class="w3-padding-48 w3-content-margin w3-row ">
             <header class="w3-bar ">
                 <span class=" fa-2x fa-tex w3-text-green">HIER GIBTS NOCH MEHR!</span>
                 <button class=" w3-border w3-bar-item w3-button w3-right">

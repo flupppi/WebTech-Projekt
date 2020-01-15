@@ -12,7 +12,9 @@
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
     .focus-ring-overlay {
         background: rgba(0, 0, 255, 0.25);
