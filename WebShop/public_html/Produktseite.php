@@ -63,7 +63,7 @@ include "header.php";
         <section class="w3-margin  w3-show-inline-block w3-width-medium">
             <h1 class="w3-xlarge w3-left-align w3-margin">
                 <span class="w3-text-dark-gray">Carla Waffle Longsleeve Sand</span>
-                <span class="w3-text-blue-gray w3-large w3-block">59.00 € now 35.00 € </span>
+                <span class="w3-text-gray w3-large w3-block">59.00 € now 35.00 € </span>
             </h1>
             <div class="w3-left-align w3-margin w3-border-top">
                 <article class="w3-medium">
