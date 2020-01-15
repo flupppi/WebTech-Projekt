@@ -3,16 +3,16 @@ include "header.php";
 ?>
     <script src="../js/FAQ.js"></script>
 
-    <main class="w3-padding-32" style="min-height:888px">
-        <div class="w3-container" style="max-width: 1180px; margin:auto ">
+    <main class="w3-padding-32 w3-sidebar-height">
+        <div class="w3-container w3-content-margin">
             <div class="w3-quarter w3-row w3-padding-48">
                 <aside class=" w3-light-grey w3-bar-block w3-border w3-card w3-round">
-                    <span class="fa-2x w3-bar-item w3-border-bottom w3-border-black">Themen</span>
-                    <a href="#" class=" w3-bar-item w3-button w3-border-bottom">Versand & Bezahlung</a>
-                    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Nachhaltigkeit </a>
-                    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Entsorgung & Produktion</a>
-                    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Dies & Das</a>
-                    <a href="#" class=" w3-bar-item w3-button w3-border-bottom">Seitenaufbau</a>
+                    <span class="fa-2x w3-bar-item w3-border-bottom w3-border-black">FAQ</span>
+                    <button onclick="questionSwitch('Versand')" class=" w3-bar-item w3-button w3-border-bottom">1. Kundenkonto</button>
+                    <button onclick="questionSwitch('Bestellung')" class="w3-bar-item w3-button w3-border-bottom">2. Bestellung  </button>
+                    <button onclick="questionSwitch('Bezahlung')" class="w3-bar-item w3-button w3-border-bottom">3. Bezahlung</button>
+                    <button href="#" class="w3-bar-item w3-button w3-border-bottom">4. Versand & Lieferung</button>
+                    <button href="#" class=" w3-bar-item w3-button w3-border-bottom">5. Widerrufsrecht, Rücksendung & Umtausch</button>
                 </aside>
             </div>
             <div class="w3-threequarter w3-row">
@@ -24,119 +24,241 @@ include "header.php";
                     </div>
                     <section class="w3-content">
 
-                        <button onclick="myFunction('Demo1')"
-                                class="w3-button w3-block w3-light-grey w3-left-align w3-border">Wie sitzen die
-                            Allbirds?</button>
-                        <div id="Demo1" class="w3-hide w3-container w3-animate-right w3-animate-opacity">
-                            <p>
-                                Die Schuhgrößen variieren je nach Modell, wir bieten jedoch für alle eine normale Breite
-                                und volle Größen. Die Wool Kollektion liegt am Anfang etwas enger an, weitet sich jedoch
-                                naturgemäß mit der Zeit. Das Tree Material passt sich dem Fuß hervorragend an und behält
-                                seine Form.
-                                <br><br>
+                        <div class="Versand w3-hide w3-show w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo1')">Welche Versandmöglichkeiten stehen mir zur
+                                Verfügung?
 
-                                Die meisten Kunden sind mit ihrer jeweiligen vollen Größe bei beiden Materialien
-                                zufrieden. Bei halben Größen wählen sie meist die größere Größe, außer bei den Tree
-                                Runners. Wenn du also breitere Füße und eine halbe Größe hast, wähle am besten die
-                                Größere bei allen Modellen!
-                                <br><br>
-                                Du bist noch unsicher? Dann helfen wir dir gerne persönlich. Schreibe unseren Experten
-                                eine E-Mail an help@allbirds.eu und erhalte eine persönliche Beratung!
-                            </p>
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo1">
+                                <p class="w3-padding">
+                                    Wir bieten derzeit nur Standardversand an.
+                                </p>
+                            </article>
                         </div>
-
-                        <button onclick="myFunction('Demo2')"
-                                class="w3-button w3-block w3-light-grey w3-left-align w3-border">
-                            Dehnen sich meine Schuhe aus?
+                        <div class="Versand w3-hide w3-show w3-animate-opacity">
+                        <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                onclick="showAnswer('Demo2')">Wie lange beträgt die Lieferzeit?
                         </button>
-                        <div id="Demo2" class="w3-hide w3-container w3-animate-right w3-animate-opacity">
-                            <p>
 
-                                Ausgezeichnete Frage! Wool Schuhe liegen anfangs etwas enger an, sie dehnen sich aber
-                                nach einigen Wochen Tragezeit um etwa ein Viertel der Größe aus. Die Tree Schuhe dagegen
-                                behalten ihre ursprüngliche Form. Dennoch empfehlen wir, sie 1 - 2 Wochen einzulaufen.
-                                Profitipp: Mit Socken laufen sich die Schuhe sogar noch besser ein!
-                                <br><br>
-                                Trage die Schuhe überall, auch draußen! Innerhalb von 30 Tagen kannst du sie dennoch
-                                ohne Angabe von Gründen zurückgeben.
-                            </p>
+
+
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo2">
+                                <p class="w3-padding">
+                                    Beim Standardversand erfolgt die Lieferung innerhalb der auf der jeweiligen Artikeldetailseite angegebenen
+                                    Werktage (Montag bis Samstag, allgemeine Feiertage ausgenommen). In der Regel können Sie von einer
+                                    Lieferzeit von 2-3 Werktagen ab Bestelleingang ausgehen, sofern nicht eine längere Lieferzeit auf der
+                                    Artikeldetailseite der jeweiligen von Ihnen bestellten Artikel angegeben ist.
+                                    <br>
+                                    Im Fall der Vorauskasse beginnt die Lieferzeit nach Zahlungseingang auf unserem Bankkonto, andernfalls nach
+                                    Vertragsschluss. Der Kaufgegenstand wird für einen Zeitraum von fünf Kalendertagen für Sie reserviert.
+                                    <br>
+                                    Bei der Bestellung mehrerer Artikel ist zur Berechnung die jeweils späteste Lieferzeitangabe der im
+                                    Warenkorb befindlichen Artikel für die Berechnung maßgeblich. Bei Waren, bei denen im Einzelfall ein
+                                    gesonderter Termin zum Start der Auslieferung angegeben ist, beginnt die Lieferfrist frühestens mit diesem
+                                    Termin.
+                                    <br>
+                                    Bei Speditionsartikeln setzt sich der Spediteur mit Ihnen in Verbindung, um einen taggenauen Liefertermin zu
+                                    vereinbaren.
+                                    <br>
+                                    Sobald Ihre Bestellung auf dem Weg zu Ihnen ist, erhalten Sie eine Versandbestätigung per E-Mail. Mit der
+                                    darin enthaltenen persönlichen Sendungsnummer können Sie Ihre Sendung mit nur einem Klick verfolgen.
+
+                                </p>
+                            </article>
                         </div>
-                        <button onclick="myFunction('Demo3')"
-                                class="w3-button w3-block w3-light-grey w3-left-align w3-border">Wie sitzen die
-                            Allbirds?</button>
-                        <div id="Demo3" class="w3-hide w3-container w3-animate-right w3-animate-opacity">
-                            <p>
+                        <div class="Versand w3-hide w3-show w3-animate-opacity">
 
-                                Die Schuhgrößen variieren je nach Modell, wir bieten jedoch für alle eine normale Breite
-                                und volle Größen. Die Wool Kollektion liegt am Anfang etwas enger an, weitet sich jedoch
-                                naturgemäß mit der Zeit. Das Tree Material passt sich dem Fuß hervorragend an und behält
-                                seine Form.
-                                <br><br>
-                                Die meisten Kunden sind mit ihrer jeweiligen vollen Größe bei beiden Materialien
-                                zufrieden. Bei halben Größen wählen sie meist die größere Größe, außer bei den Tree
-                                Runners. Wenn du also breitere Füße und eine halbe Größe hast, wähle am besten die
-                                Größere bei allen Modellen!
-                                <br><br>
-                                Du bist noch unsicher? Dann helfen wir dir gerne persönlich. Schreibe unseren Experten
-                                eine E-Mail an help@allbirds.eu und erhalte eine persönliche Beratung!
-                            </p>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo3')">Welche Versandkosten fallen an?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo3">
+                                <p class="w3-padding">
+                                    Für den Versand Ihrer Bestellung fällt, unabhängig vom Bestellwert, einmalig eine Versandkostenpauschale in
+                                    Höhe von 4,95 Euro an. Dies gilt auch, wenn in Ausnahmefällen Ihre Bestellung in mehreren Paketen versandt
+                                    wird.
+                                    <br>
+                                    Beim Versand von sperrigen Gütern wird zzgl. der Versandkostenpauschale von 4,95 Euro ein
+                                    Versandkostenzuschlag in Höhe von 5,95 Euro berechnet.
+                                    <br>
+                                    Bei besonders großen Artikeln fallen, zusätzlich zu der Versandkostenpauschale von 4,95 Euro,
+                                    Speditionskosten in Höhe von 29,95 Euro an.
+                                    <br>
+                                    Bitte beachten Sie, dass der Versandkostenzuschlag in Einzelfällen abweichen kann. Die Versandkosten und
+                                    eventuelle Versandkostenzuschläge sind in der jeweiligen Artikelbeschreibung auf lidl.de gesondert
+                                    ausgewiesen.
+
+                                </p>
+                            </article>
+                        </div>
+                        <div class="Versand w3-hide w3-show w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo4')">Wohin kann das Paket geliefert werden?
+
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo4">
+                                <p class="w3-padding">
+                                    Wir liefern Ihr Paket problemlos und zuverlässig an jede gewünschte Adresse in Deutschland. Gerne liefern
+                                    wir Ihr Paket an eine von der Rechnungsanschrift abweichende Adresse – sofern sich Rechnungs- und
+                                    Lieferadresse in Deutschland befinden. Wir liefern direkt zu Ihnen nach Hause; sollten Sie tagsüber nicht
+                                    zuhause sein, können Sie gerne die Adresse von Ihren Eltern, Freunden, Nachbarn etc. als Lieferadresse
+                                    angeben.
+                                    <br>
+                                    Alternativ können Sie Ihr Paket (max. Größe 60 x 35 x 35 cm) auch an eine DHL-Packstation Ihrer Wahl
+                                    ausliefern lassen. Sollte die Sendung aufgrund Ihrer Maße für die Packstation ungeeignet sein, wird DHL das
+                                    Paket nach Möglichkeit an eine Postfiliale umleiten und Sie darüber informieren. Nähere Informationen und
+                                    die Möglichkeit einer Registrierung finden Sie auf Paket.de.
+                                    Genießen Sie die Vorteile einer DHL-Packstation:
+                                    <br>
+                                    Sendungen rund um die Uhr empfangen und versenden*
+                                    9 Tage Zeit für die Abholung Ihres Pakets
+                                    Sicherheit des Packstationsfachs mittels mTAN
+                                    Deutschlandweit stehen 2.650 Packstationen zur Verfügung
+                                    <br>
+                                    Der Retourenschein befindet sich in Ihrem Paket und dient als Beleg für die Auslieferung. Ihre Rechnung
+                                    senden wir per E-Mail im PDF-Format zu.
+                                    <br>
+                                    *An einzelnen Packstationen können die Öffnungszeiten abweichen.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="Versand w3-hide w3-show w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo5')">Wohin kann das Paket geliefert werden?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo5">
+                                <p class="w3-padding">
+                                    Wir liefern Ihr Paket problemlos und zuverlässig an jede gewünschte Adresse in Deutschland. Gerne liefern
+                                    wir Ihr Paket an eine von der Rechnungsanschrift abweichende Adresse – sofern sich Rechnungs- und
+                                    Lieferadresse in Deutschland befinden. Wir liefern direkt zu Ihnen nach Hause; sollten Sie tagsüber nicht
+                                    zuhause sein, können Sie gerne die Adresse von Ihren Eltern, Freunden, Nachbarn etc. als Lieferadresse
+                                    angeben.
+                                    <br>
+                                    Alternativ können Sie Ihr Paket (max. Größe 60 x 35 x 35 cm) auch an eine DHL-Packstation Ihrer Wahl
+                                    ausliefern lassen. Sollte die Sendung aufgrund Ihrer Maße für die Packstation ungeeignet sein, wird DHL das
+                                    Paket nach Möglichkeit an eine Postfiliale umleiten und Sie darüber informieren. Nähere Informationen und
+                                    die Möglichkeit einer Registrierung finden Sie auf Paket.de.
+                                    Genießen Sie die Vorteile einer DHL-Packstation:
+                                    <br>
+                                    Sendungen rund um die Uhr empfangen und versenden*
+                                    9 Tage Zeit für die Abholung Ihres Pakets
+                                    Sicherheit des Packstationsfachs mittels mTAN
+                                    Deutschlandweit stehen 2.650 Packstationen zur Verfügung
+                                    <br>
+                                    Der Retourenschein befindet sich in Ihrem Paket und dient als Beleg für die Auslieferung. Ihre Rechnung
+                                    senden wir per E-Mail im PDF-Format zu.
+                                    <br>
+                                    *An einzelnen Packstationen können die Öffnungszeiten abweichen.
+                                </p>
+                            </article>
                         </div>
 
-                        <button onclick="myFunction('Demo4')"
-                                class="w3-button w3-block w3-light-grey w3-left-align w3-border">
-                            Dehnen sich meine Schuhe aus?
-                        </button>
-                        <div id="Demo4" class="w3-hide w3-container w3-animate-right w3-animate-opacity">
-                            <p>
 
-                                Ausgezeichnete Frage! Wool Schuhe liegen anfangs etwas enger an, sie dehnen sich aber
-                                nach einigen Wochen Tragezeit um etwa ein Viertel der Größe aus. Die Tree Schuhe dagegen
-                                behalten ihre ursprüngliche Form. Dennoch empfehlen wir, sie 1 - 2 Wochen einzulaufen.
-                                Profitipp: Mit Socken laufen sich die Schuhe sogar noch besser ein!
-                                <br><br>
-                                Trage die Schuhe überall, auch draußen! Innerhalb von 30 Tagen kannst du sie dennoch
-                                ohne Angabe von Gründen zurückgeben.
-                            </p>
-                        </div>
-                        <button onclick="myFunction('Demo5')"
-                                class="w3-button w3-block w3-light-grey w3-left-align w3-border">Wie sitzen die
-                            Allbirds?</button>
-                        <div id="Demo5" class="w3-hide w3-container w3-animate-right w3-animate-opacity">
-                            <p>
+                        <div class="Bestellung w3-hide w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo6')">Wie erhalte ich die Rechnung zu meiner Bestellung?
 
-                                Die Schuhgrößen variieren je nach Modell, wir bieten jedoch für alle eine normale Breite
-                                und volle Größen. Die Wool Kollektion liegt am Anfang etwas enger an, weitet sich jedoch
-                                naturgemäß mit der Zeit. Das Tree Material passt sich dem Fuß hervorragend an und behält
-                                seine Form.
+                            </button>
+
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo6">
+                                <p class="w3-padding">
+
+
+                                    Die Rechnung zu Ihrer Bestellung erhalten Sie automatisch per E-Mail im PDF-Format. Außerdem können Sie Ihre
+                                    Rechnungen jederzeit online in Ihrem Kundenkonto einsehen und downloaden. Die Rechnung enthält folgende
+                                    Angaben:
+                                    <br>
+
+                                <ul>
+                                    <li>Rechnungsdaten</li>
+                                    <li>Vollständige Anschrift</li>
+                                    <li>Artikelbezeichnung</li>
+                                    <li>Bestellmenge</li>
+                                    <li>Versandkosten zzgl. eventueller Versandkostenzuschläge</li>
+                                    <li>Zahlungsart</li>
+                                    <li>QR-Code</li>
+
+                                </ul>
+
                                 <br>
-                                <br>
-                                Die meisten Kunden sind mit ihrer jeweiligen vollen Größe bei beiden Materialien
-                                zufrieden. Bei halben Größen wählen sie meist die größere Größe, außer bei den Tree
-                                Runners. Wenn du also breitere Füße und eine halbe Größe hast, wähle am besten die
-                                Größere bei allen Modellen!
-                                <br>
-                                <br>
-                                Du bist noch unsicher? Dann helfen wir dir gerne persönlich. Schreibe unseren Experten
-                                eine E-Mail an help@allbirds.eu und erhalte eine persönliche Beratung!
-                            </p>
+                                Sollten Sie keinen Drucker zur Verfügung haben, können Sie unseren Kundenservice kontaktieren, damit Sie die
+                                gewünschte Rechnung postalisch zugeschickt bekommen.
+
+                                </p>
+                            </article>
                         </div>
 
-                        <button onclick="myFunction('Demo6')"
-                                class="w3-button w3-block w3-light-grey w3-left-align w3-border">
-                            Dehnen sich meine Schuhe aus?
-                        </button>
-                        <div id="Demo6" class="w3-hide w3-container w3-animate-right w3-animate-opacity">
-                            <p>
+                        <div class="Bestellung w3-hide w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo7')">
+                                Gibt es einen Mindestbestellwert?
 
-                                Ausgezeichnete Frage! Wool Schuhe liegen anfangs etwas enger an, sie dehnen sich aber
-                                nach einigen Wochen Tragezeit um etwa ein Viertel der Größe aus. Die Tree Schuhe dagegen
-                                behalten ihre ursprüngliche Form. Dennoch empfehlen wir, sie 1 - 2 Wochen einzulaufen.
-                                Profitipp: Mit Socken laufen sich die Schuhe sogar noch besser ein!
-                                <br>
-                                <br>
-                                Trage die Schuhe überall, auch draußen! Innerhalb von 30 Tagen kannst du sie dennoch
-                                ohne Angabe von Gründen zurückgeben.
-                            </p>
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo7">
+                                <p class="w3-padding">
+
+
+                                    Nein, um bei uns zu bestellen, müssen Sie keinen Mindestbestellwert beachten.
+                                    <br>
+                                    Falls Sie bei Ihrer Bestellung jedoch einen Gutschein einlösen möchten, kann es ggf. einen Mindestbestellwert, sowie weitere Einlösebedingungen geben. Bitte beachten Sie dazu auch unsere allgemeinen Nutzungsbedingungen für Gutscheine, sowie die jeweiligen themenspezifischen Gutscheinbedingungen.
+
+                                </p>
+                            </article>
+                        </div>
+                        <div class="Bezahlung w3-hide w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo8')">Welche Zahlungsarten stehen im Lidl-Onlineshop zur Verfügung?
+
+
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo8">
+                                <p class="w3-padding">
+
+
+                                    Im Lidl-Onlineshop werden folgende Zahlungsarten angeboten:
+                                    <br><br>
+                                    Rechnung,
+                                    Lastschrift,
+                                    Vorauskasse,
+                                    PayPal,
+                                    Kreditkarte,
+                                    Ratenkauf,
+                                    Zahlpause,
+                                    Gutschein
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir im Einzelfall bestimmte Zahlungsarten nicht anbieten können.
+
+                                </p>
+                            </article>
+                        </div>
+                        <div class="Bezahlung w3-hide w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo9')">Was muss ich bei der Zahlung per Rechnung beachten?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo9">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14 Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen. Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine Haftung übernehmen.
+
+                                </p>
+                            </article>
                         </div>
                     </section>
                 </div>
