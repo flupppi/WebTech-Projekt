@@ -3,28 +3,30 @@ require "header.php";
 ?>
 
 <main>
-    <h1>Signup</h1>
+    <h1 class="w3-center">Signup</h1>
     <?php
+    error_reporting(E_ERROR | E_PARSE);
         if (isset($_GET['error'])){
             if ($_GET['error'] == "emptyfields"){
-                echo '<p class="w3-red">Fill in all fields!</p>';
+                echo '<p class="w3-red w3-center">Fill in all fields!</p>';
             }
             else if ($_GET['error'] == "invaliduidmail") {
-                echo '<p class="w3-red">invalid username and e-mail!</p>';
-            }else if ($_GET['error'] == "invalidui") {
-                echo '<p class="w3-red">invalid username!</p>';
+                echo '<p class="w3-red w3-center ">invalid username and e-mail!</p>';
+            }else if ($_GET['error'] == "invaliduid") {
+                echo '<p class="w3-red w3-center">invalid username! A username must be between 5 and 32 characters long
+                      and can only contain numbers and letters form the latin Alphabet</p>';
             }else if ($_GET['error'] == "invalidmail") {
-                echo '<p class="w3-red">invalid e-mail!</p>';
+                echo '<p class="w3-red w3-center">invalid e-mail!</p>';
             }else if ($_GET['error'] == "passwordcheck") {
-                echo '<p class="w3-red">Your passwords do not match!</p>';
+                echo '<p class="w3-red w3-center">Your passwords do not match!</p>';
             }else if ($_GET['error'] == "userTaken") {
-                echo '<p class="w3-red">Username is already taken!</p>';
+                echo '<p class="w3-red w3-center">Username is already taken!</p>';
             }
         } elseif ($_GET['signup'] == "success"){
             echo '<p class="w3-green">Signup successful!</p>';
         }
     ?>
-    <form action="includes/signup.inc.php" method="post">
+    <form action="../includes/signup.inc.php" method="post" class="w3-center">
         <input type="text" name="uid" placeholder="Username">
         <input type="text" name="mail" placeholder="E-mail">
         <input type="password" name="pwd" placeholder="Password">

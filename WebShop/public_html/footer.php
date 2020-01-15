@@ -11,6 +11,7 @@
             <nav class="w3-bar-item"><a class="w3-button"href="Impressum.php">Impressum</a></nav>
             <nav class="w3-bar-item "><a class="w3-button"href="index.php">Home</a></nav>
             <nav class="w3-bar-item "><a class="w3-button" href="Infoseite.php">Info</a></nav>
+            <nav class="w3-bar-item "><a class="w3-button" href="Agb.php">AGBs</a></nav>
         </nav>
         <nav class="w3-third w3-black">
 

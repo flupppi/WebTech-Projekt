@@ -61,18 +61,24 @@
 
             </form>
             <nav role="button" class="w3-right">
-                <button href="#" role="button" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
+                <a href="signup.php" role="button" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
                     ACCOUNT
                     ERSTELLEN
-                </button>
+                </a>
 
 
                 <button onclick="" role="button" tabindex="0" class=" w3-button "><i
                         class="fa fa-shopping-basket"></i>
                     WARENKORB</button>
-                <button href="#" role="button" tabindex="0" class=" w3-button"><i
+
+                <?php if(ISSET($_SESSION['userId'])){
+                    echo '<a href="login.php" role="button" tabindex="0" class=" w3-button"><i
                         class="fa fa-sign-in"></i>
-                    LOGIN</button>
+                    LOGIN</a>';}else{
+                    echo '<a href="../includes/logout.inc.php" role="button" tabindex="0" class=" w3-button"><i
+                        class="fa fa-sign-out"></i>
+                    LOGIN</a>';
+                }?>
             </nav>
         </nav>
 
