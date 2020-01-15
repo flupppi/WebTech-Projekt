@@ -1116,9 +1116,7 @@ a{
 .w3-right{
     float:right!important
 }
-.w3-center-float{
-    float:center!important
-}
+
 
 /* gibt dem Element einen Hover Effekt */
 .w3-button:hover{
@@ -1458,7 +1456,20 @@ a{
     background: lightblue;
     color: black;
   }
-
+/*entfernt die Unterstreichung eines Elements*/
   .w3-nouline{
       text-decoration: none;
+  }
+  /* gibt einem Feld eine feste größe*/
+    .w3-width-medium{
+        max-width: 600px;
+    }
+  .mySlidesMobile {
+      display:none
+  }
+  .w3-left, .w3-right, .w3-badge {
+      cursor:pointer
+  }
+  .w3-badge {
+      height:13px;width:13px;padding:0
   }

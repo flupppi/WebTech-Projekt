@@ -4,7 +4,7 @@ include "header.php";
 ?>
 
 <main>
-    <div class="w3-container" style="max-width: 1180px; margin:auto ">
+    <section class="w3-container" style="max-width: 1180px; margin:auto ">
         <div class="w3-quarter w3-row w3-padding-48">
             <aside class=" w3-light-grey w3-bar-block w3-border w3-card w3-round">
                 <span class="fa-2x w3-bar-item w3-border-bottom w3-border-black">Kategorien</span>
@@ -135,19 +135,19 @@ include "header.php";
                     </a>
                 </div>
             </section>
-            <div class="w3-center w3-padding-24">
-                <div class="w3-bar w3-border w3-round">
+            <nav class="w3-center w3-padding-24">
+                <ul class="w3-bar w3-border w3-round">
                     <a href="#" class="w3-button">&laquo;</a>
                     <a href="#" class="w3-button">1</a>
                     <a href="#" class="w3-button">2</a>
                     <a href="#" class="w3-button">3</a>
                     <a href="#" class="w3-button">4</a>
                     <a href="#" class="w3-button">&raquo;</a>
-                </div>
-            </div>
+                </ul>
+            </nav>
         </div>
 
-    </div>
+    </section>
 </main>
 
 <?php
