@@ -144,16 +144,16 @@ include "header.php";
             </section>
         </article>
     </main>
-    <nav class="w3-center w3-padding-24">
-        <ul class="w3-bar w3-border w3-round">
+    <footer class="w3-center w3-padding-24">
+        <nav class="w3-bar w3-border w3-round">
             <a href="Blogübersicht.php" class="w3-button">&laquo;</a>
             <a href="Blogübersicht.php" class="w3-button">1</a>
             <a href="Blogübersicht.php" class="w3-button">2</a>
             <a href="Blogübersicht.php" class="w3-button">3</a>
             <a href="Blogübersicht.php" class="w3-button">4</a>
             <a href="Blogübersicht.php" class="w3-button">&raquo;</a>
-        </ul>
-    </nav>
+        </nav>
+    </footer>
 
 <?php
 include "footer.php";
