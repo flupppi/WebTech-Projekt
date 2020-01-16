@@ -74,12 +74,12 @@
                     WARENKORB</button>
 
                 <?php if(ISSET($_SESSION['userId'])){
-                    echo '<a href="../includes/logout.inc.php" role="button" tabindex="0" class=" w3-button"><i
+                    echo '<button onclick="showLogin(\'login\')"  role="button" tabindex="0" class=" w3-button"><i
                         class="fa fa-sign-out"></i>
-                    LOGOUT</a>';}else{
-                    echo '<a href="login.php" role="button" tabindex="0" class=" w3-button"><i
+                    LOGOUT</button>';}else{
+                    echo '<button onclick="showLogin(\'login\')" role="button" tabindex="0" class=" w3-button"><i
                         class="fa fa-sign-in"></i>
-                    LOGIN</a>';
+                    LOGIN</button>';
                 }?>
             </nav>
         </nav>
