@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="de">
+<title>FAQ</title>
+<meta charset="UTF-8">
+
 <?php
 include "header.php";
 ?>
@@ -207,7 +212,7 @@ include "header.php";
                                     Rechnungen jederzeit online in Ihrem Kundenkonto einsehen und downloaden. Die
                                     Rechnung enthält folgende
                                     Angaben:
-                                    <br>
+                                </p>
 
                                 <ul>
                                     <li>Rechnungsdaten</li>
@@ -220,7 +225,7 @@ include "header.php";
 
                                 </ul>
 
-                                <br>
+                                <p class="w3-padding">
                                 Sollten Sie keinen Drucker zur Verfügung haben, können Sie unseren Kundenservice
                                 kontaktieren, damit Sie die
                                 gewünschte Rechnung postalisch zugeschickt bekommen.
