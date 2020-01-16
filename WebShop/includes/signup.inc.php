@@ -49,11 +49,11 @@ if (isset($_POST['signup-submit'])) {
 
             //var_dump($users);
             savearr($users);
-            header("Location ../public_html/index.php?signup=success");
+            header("Location: ../public_html/index.php?signup=success");
             exit();
         }
     }
 } else {  //user kommt nicht von dem Button
-    header("Location ../public_html/index.php");
+    header("Location: ../public_html/index.php");
     exit();
 }

@@ -74,9 +74,9 @@
                     WARENKORB</button>
 
                 <?php if(ISSET($_SESSION['userId'])){
-                    echo '<button onclick="showLogin(\'login\')"  role="button" tabindex="0" class=" w3-button"><i
+                    echo '<form action="../includes/logout.inc.php"><button type="submit"  role="button" tabindex="0" class=" w3-button"><i
                         class="fa fa-sign-out"></i>
-                    LOGOUT</button>';}else{
+                    LOGOUT</button></form>';}else{
                     echo '<button onclick="showLogin(\'login\')" role="button" tabindex="0" class=" w3-button"><i
                         class="fa fa-sign-in"></i>
                     LOGIN</button>';
@@ -139,14 +139,22 @@
             </nav>
 
 
-            <button role="button" tabindex="0" class=" w3-button "><i class="fa fa-user"></i>
+            <button onclick="showSignup('signup')" role="button" tabindex="0" class=" w3-button "><i class="fa fa-user"></i>
             </button>
-            <button onclick="" role="button" tabindex="0" class=" w3-button  "><i
+            <button onclick="showCart('cart')" role="button" tabindex="0" class=" w3-button  "><i
                     class="fa fa-shopping-basket"></i>
             </button>
-            <button  role="button" tabindex="0" class=" w3-button "><i
-                    class="fa fa-sign-in"></i>
-            </button>
+          <?php if(!ISSET($_SESSION['userId'])){
+              echo '<button  onclick="showLogin(\'login\')" role="button" tabindex="0" class=" w3-button ">
+                        <i class="fa fa-sign-in"></i>
+                    </button>';
+          }else {
+              echo '<form action="../includes/logout.inc.php">
+                    <button  type="submit" role="button" tabindex="0" class=" w3-button "><i
+                    class="fa fa-sign-out"></i>
+            </button></form>';
+          }
+            ?>
         </nav>
 
     </header>

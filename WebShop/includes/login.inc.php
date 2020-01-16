@@ -10,23 +10,23 @@ if(isset($_POST['login-submit'])){
      $password = isset($_POST['pwd'])     ? $_POST["pwd"]     : null;
 
     if(empty($mail) || $mail === null || empty($password) || $password === null) {
-        header("Location: ../index.php?error=emptyfields");
+        header("Location: ../public_html/index.php?error=emptyfields");
     } else {
             if (emailExists($mail)) {
                 $user=getUserByMail($mail);
                 $pwdCheck = password_verify($password, $user->getPassword());
                 if ($pwdCheck == false) {
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../public_html/index.php?error=wrongpwd");
                     exit();
                 }
                 else if ($pwdCheck === true){
                     $_SESSION['userId'] = $user->getUsername();
-
-                    header("Location: ../index.php?login=success");
+                    print_r($_SESSION);
+                    header("Location: ../public_html/index.php?login=success");
                     exit();
                 }
             } else {
-                header("Location: ../index.php?error=nouser");
+                header("Location: ../public_html/index.php?error=nouser");
                 exit();
             }
         }

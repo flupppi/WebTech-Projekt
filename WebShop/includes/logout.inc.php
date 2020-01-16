@@ -1,7 +1,6 @@
 <?php
 require 'usersHandler.inc.php';
-saveArr($users);
 session_start();
 session_unset();
 session_destroy();
-header("Location: ../index.php");
+header("Location: ../public_html/index.php");
