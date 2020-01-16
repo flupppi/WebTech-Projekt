@@ -1,5 +1,9 @@
-<?php
+<!DOCTYPE html>
+<html lang="de">
+<meta charset="UTF-8">
+<title>Produktseite</title>
 
+<?php
 include "header.php";
 ?>
 
@@ -43,9 +47,9 @@ include "header.php";
         </section>
 
         <section class="w3-content w3-display-container w3-hide-medium w3-hide-large" style="max-width:800px">
-            <img class="mySlidesMobile" src="img/items/Coco_Hoodie_Dariadeh_2b.JPG" style="width:100%">
-            <img class="mySlidesMobile" src="img/items/Coco_Hoodie_Dariadeh_1.JPG" style="width:100%; display: block">
-            <img class="mySlidesMobile" src="img/items/Coco_Hoodie_Dariadeh_3.JPG" style="width:100%">
+            <img class="mySlidesMobile" src="img/items/Coco_Hoodie_Dariadeh_2b.JPG" style="width:100%" alt="green dress">
+            <img class="mySlidesMobile" src="img/items/Coco_Hoodie_Dariadeh_1.JPG" style="width:100%; display: block" alt="green dress">
+            <img class="mySlidesMobile" src="img/items/Coco_Hoodie_Dariadeh_3.JPG" style="width:100%" alt="green dress">
             <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
                  style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
@@ -120,9 +124,7 @@ include "header.php";
         <section class="w3-padding-48 w3-content-margin w3-row ">
             <header class="w3-bar ">
                 <span class=" fa-2x fa-tex w3-text-green">HIER GIBTS NOCH MEHR!</span>
-                <button class=" w3-border w3-bar-item w3-button w3-right">
-                    <a class="w3-nouline" href="Produktübersicht.php">MEHR</a>
-                </button>
+                    <a class=" w3-border w3-bar-item w3-button w3-right w3-nouline" href="Produktübersicht.php">MEHR</a>
             </header>
             <section class="w3-row w3-padding">
                 <article class="w3-quarter  "> <a  class="w3-nouline" href="Produktseite.php">
@@ -164,7 +166,7 @@ include "header.php";
                             </figcaption>
                         </figure>
                     </a>
-                </article
+                </article>
 
             </section>
         </section>
