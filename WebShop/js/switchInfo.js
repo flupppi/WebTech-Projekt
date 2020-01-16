@@ -1,29 +1,16 @@
-function showAnswer(id) {
-    let x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") === -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className =
-            x.previousElementSibling.className.replace("w3-light-grey", "w3-dark-grey");
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className =
-            x.previousElementSibling.className.replace("w3-dark-grey", "w3-light-grey");
-    }
-}
-
-function questionSwitch(clName) {
-    var kundenkonto = document.getElementsByClassName("Kundenkonto");
+function switchInfo(infoID) {
+    var baumwolle = document.getElementsByClassName("Baumwolle");
     var bestellung = document.getElementsByClassName("Bestellung");
     var bezahlung = document.getElementsByClassName("Bezahlung");
     var versand = document.getElementsByClassName("Versand");
     var lieferung = document.getElementsByClassName("Lieferung");
 
 
-    for (let i = 0; i < versand.length; i++) {
-        if (kundenkonto[i].className.indexOf("w3-show") === -1) {
+    for (let i = 0; i < baumwolle.length; i++) {
+        if (baumwolle[i].className.indexOf("w3-show") === -1) {
 
         } else {
-            kundenkonto[i].className = kundenkonto[i].className.replace(" w3-show", "");
+            baumwolle[i].className = baumwolle[i].className.replace(" w3-show", "");
         }
     }
     for (let i = 0; i < bestellung.length; i++) {
@@ -57,7 +44,7 @@ function questionSwitch(clName) {
         }
     }
 
-    var x = document.getElementsByClassName(clName);
+    var x = document.getElementsByClassName(infoID);
 
     let i;
     for (i = 0; i < x.length; i++) {
@@ -69,5 +56,5 @@ function questionSwitch(clName) {
             x[i].className = x[i].className.replace(" w3-show", "");
         }
     }
-}
 
+}
