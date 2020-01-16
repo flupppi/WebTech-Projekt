@@ -1,23 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
 <?php
     include "header.php";
 ?>
 
-<!--Header-->
 <main>
     <!-- Automatic Slideshow Images -->
     <figure class="w3-content w3-section w3-display-container w3-hide-small">
-
-        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-1.jpg" ">
-        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-2.jpg">
-        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-3.jpg">
+        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-1.jpg" alt="Banner">
+        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-2.jpg" alt="Banner">
+        <img class="mySlides w3-banner w3-animate-right" src="img/home-slider-slide-3.jpg" alt="Banner">
         <label class="w3-padding w3-display-bottomleft  w3-funky fa-5x w3-text-white ">Sustainable Fashion!</label>
-
     </figure>
-
     <script src="../js/carousel.js"></script>
     <figure class="w3-content w3-hide-medium w3-hide-large">
-        <img class="w3-banner" src="img/mobile-home.jpg">
+        <img class="w3-banner" src="img/mobile-home.jpg" alt="Banner">
     </figure>
+
+    <!--hier werden einzelne blogeinträge präsentiert-->
+    <!--erster eintrag-->
     <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
         <header class="w3-container">
             <h2 class="w3-xlarge w3-bold w3-funky w3-uline">Fair Fashion Guide</h2>
@@ -31,24 +36,22 @@
             Schaffrin sowie Tipps zum fairen Modekonsum aus dem Fair Fashion Guide. Webseite und Printmagazin sind
             in Zusammenarbeit mit FEMNET e. V. und dem Beneficial Design Institute entstanden. Hier ein Auszug mit
             Links zum Weiterschmökern im Original…
-            <br></p>
+            <br>
             <nav class="w3-row w3-col m8 s12">
                 <p>
-                    <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                            »</a></button>
+                    <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                 </p>
             </nav>
 
         </section>
-        <section class="w3-third">
+        <figure class="w3-third" style="margin:0px">
             <img class="w3-image" src="../text/blog/fair_fashion_guide.jpg" alt="future fashion forward e. V.">
             <figcaption class="w3-small">Trendy und nachhaltig: Wie das geht zeigt der Fair Fashion Guide.
             </figcaption>
-        </section>
+        </figure>
     </article>
 
-
+    <!--zweiter eintrag-->
     <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
         <header class="w3-container">
             <h2 class="w3-xlarge w3-bold w3-funky w3-uline">Fashion Revolution Week</h2>
@@ -68,19 +71,17 @@
             </p>
             <nav class="w3-row w3-col m8 s12">
                 <p>
-                    <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                            »</a></button>
+                    <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                 </p>
             </nav>
         </section>
-        <section class="w3-third">
+        <figure class="w3-third" style="margin:0px">
             <img class="w3-image" src="../text/blog/quote_ellenköhrer.jpg" alt="future fashion forward e. V.">
             <figcaption class="w3-hide">future fashion forward e. V.</figcaption>
-        </section>
+        </figure>
     </article>
 
-
+    <!--dritter eintag-->
     <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
         <header class="w3-container">
             <h2 class="w3-xlarge w3-bold w3-funky w3-uline">Interview</h2>
@@ -106,30 +107,27 @@
             </p>
             <nav class="w3-row w3-col m8 s12">
                 <p>
-                    <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                            »</a></button>
+                    <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                 </p>
             </nav>
         </section>
-        <section class="w3-third">
+        <figure class="w3-third" style="margin:0">
             <img class="w3-image w3-sha" src="../text/blog/MUD-JEANS-Blog_Interview-moi.jpg"
                  alt="future fashion forward e. V.">
             <figcaption class="w3-hide">FASHION MADE FAIR</figcaption>
-        </section>
+        </figure>
     </article>
 
+    <!--hier werden produkte präsentiert-->
     <section class="w3-padding-48 w3-content-margin w3-row ">
         <header class="w3-bar ">
             <span class=" fa-2x fa-tex w3-text-green w3-funky">Hier gehts zu den Klamotten!</span>
-            <button class=" w3-border w3-bar-item w3-button w3-right">
-                <a class="w3-nouline" href="Produktübersicht.php">MEHR</a>
-            </button>
+                <a class="w3-nouline w3-border w3-bar-item w3-button w3-right" href="Produktübersicht.php">MEHR</a>
         </header>
         <section class="w3-row w3-padding">
-            <article class="w3-quarter  "> <a  class="w3-nouline" href="Produktseite.php">
+            <article class="w3-quarter">
+                <a  class="w3-nouline" href="Produktseite.php">
                     <figure class=" w3-margin">
-
                         <img src="img/items/BasicTShirtLouis.jpg"  style="width:100%" alt="shirt türkis">
                         <figcaption class="w3-container w3-center w3-medium">
                             Unisex Basic T-Shirt Cashew
@@ -138,16 +136,19 @@
                     </figure>
                 </a>
             </article>
-            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+            <article class="w3-quarter">
+                <a class="w3-nouline" href="Produktseite.php">
                     <figure class=" w3-margin">
                         <img src="img/items/carla_Ecru.jpg" style="width:100%" alt="shirt türkis">
                         <figcaption class="w3-container w3-center w3-medium">
                             Carla Waffle Longsleeve Ecru
                             <span class="w3-row">55.00€</span>
                         </figcaption>
-                    </figure></a>
+                    </figure>
+                </a>
             </article>
-            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+            <article class="w3-quarter">
+                <a class="w3-nouline" href="Produktseite.php">
                     <figure class=" w3-margin">
                         <img src="img/items/carla_sand.jpg" style="width:100%" alt="shirt türkis">
                         <figcaption class="w3-container w3-center w3-medium">
@@ -157,7 +158,8 @@
                     </figure>
                 </a>
             </article>
-            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+            <article class="w3-quarter">
+                <a class="w3-nouline" href="Produktseite.php">
                     <figure class=" w3-margin">
                         <img src="img/items/dariadeh_ayla_top_lowres.jpg" style="width:100%" alt="shirt türkis">
                         <figcaption class="w3-container w3-center w3-medium">
@@ -166,9 +168,9 @@
                         </figcaption>
                     </figure>
                 </a>
-            </article
-
+            </article>
         </section>
+    </section>
 </main>
 
 <?php
