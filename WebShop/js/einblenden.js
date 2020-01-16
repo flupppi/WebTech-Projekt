@@ -15,9 +15,9 @@ function showLogin(loginID){
 
 }
 
-function showSignup(signup){
+function showSignup(signupID){
 
-    let x = document.getElementById(loginID);
+    let x = document.getElementById(signupID);
     if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
         x.previousElementSibling.className =
@@ -32,7 +32,7 @@ function showSignup(signup){
 
 function showCart(cartID){
 
-    let x = document.getElementById(loginID);
+    let x = document.getElementById(cartID);
     if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
         x.previousElementSibling.className =

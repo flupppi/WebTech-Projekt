@@ -63,13 +63,13 @@
 
             </form>
             <nav role="button" class="w3-right">
-                <a onclick="../js/showSignup" role="button" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
+                <a onclick="showSignup('signup')" role="button" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
                     ACCOUNT
                     ERSTELLEN
                 </a>
 
 
-                <button onclick="../js/showCart" role="button" tabindex="0" class=" w3-button "><i
+                <button onclick="showCart('cart')" role="button" tabindex="0" class=" w3-button "><i
                         class="fa fa-shopping-basket"></i>
                     WARENKORB</button>
 
