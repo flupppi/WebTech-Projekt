@@ -1,6 +1,6 @@
 <section id="login"class="w3-hide">
 <h2 class="w3-xlarge w3-bold w3-margin-left"> Login</h2>
-<form class="w3-container w3-padding-16" action="/action_page.php" method="post">
+<form class="w3-container w3-padding-16" action="/login.inc.php" method="post">
 
     <label class="w3-medium w3-bold">Username</label>
     <input class="w3-input" type="text" placeholder="Enter Username" name="uname" required>
