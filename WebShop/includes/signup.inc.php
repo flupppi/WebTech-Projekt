@@ -1,5 +1,6 @@
 <?php
 //check ob der User vom submit button kommt security and stuff
+// var_dump($_POST);
 if (isset($_POST['signup-submit'])) {
     require 'usersHandler.inc.php';
 
@@ -8,6 +9,7 @@ if (isset($_POST['signup-submit'])) {
     $password = $_POST['pwd'];
     $passwordRepeat = $_POST['pwd-repeat'];
     /*Kein Feld darf leer sein*/
+    var_dump($_POST);
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
         /*schick die validen Eingaben zurück*/
         header("Location: ../public_html/signup.php?error=emptyfields&uid=" . $username . "&mail=" . $email);
