@@ -1,30 +1,22 @@
 <?php
 include "header.php";
 ?>
-
-<!--Breadcrumb-->
-
-
+<!--hier stellt sich das unternehmen sich und seine anliegen kurz vor-->
 <main class="w3-animate-opacity">
-    <nav class="w3-white w3-bar">
-        <ul class="breadcrumb w3-white">
-            <li><a href="index.php">Home</a></li>
-            <li>About</li>
-        </ul>
-    </nav>
-    <div class="w3-display-container w3-center w3-hide-small ">
+    <!-- banner große bildschirme-->
+    <span class="w3-display-container w3-center w3-hide-small ">
         <img src="img/About/Banner.jpg" style="width:100%;" alt="banner">
-    </div>
-    <div class="w3-display-container w3-center w3-hide-medium w3-hide-large">
+    </span>
+    <!--angepasstes bannerbild für kleine bildschirme-->
+    <span class="w3-display-container w3-center w3-hide-medium w3-hide-large">
         <img src="img/About/MobileBanner.jpg" style="width:100%;" alt="banner">
-    </div>
+    </span>
+
+    <!--erster text-->
     <section class="w3-row-padding w3-padding-64 w3-container">
         <article class="w3-width-medium w3-content" >
 
             <h1>Unsere Story</h1>
-
-
-
                 <p class="w3-padding-large">Im Herzen von Oberfranken, in der beschaulichen Textilschmiede Helmbrechts, hat bleed seinen Ursprung –
                 und bleibt dort bis heute verwurzelt. Gegründet wurde das Label 2008 von Local und Skateboarder Michael
                 Spitzbarth, der nach seinem Studium im Bereich Textildesign einige Jahre als Freelancer für
@@ -46,9 +38,6 @@ Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprü
                     werden und uns gegenseitig unterstützen.</p>
 
 
-
-
-
             <p class="w3-text-grey w3-block">
 "Zu einem nachhaltigen Lifestyle inspirieren, der Spaß macht und einfach in das tägliche Leben zu
                 integrieren ist."
@@ -58,7 +47,7 @@ Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprü
         </article>
     </section>
 
-    <!-- Second Grid -->
+    <!-- zweiter text farbliche trennung von erstem -->
     <section class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <article class="w3-width-medium w3-content">
 
