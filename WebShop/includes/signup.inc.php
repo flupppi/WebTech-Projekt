@@ -9,10 +9,10 @@ if (isset($_POST['signup-submit'])) {
     $password = $_POST['pwd'];
     $passwordRepeat = $_POST['pwd-repeat'];
     /*Kein Feld darf leer sein*/
-    var_dump($_POST);
+
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
         /*schick die validen Eingaben zurück*/
-        header("Location: ../public_html/signup.php?error=emptyfields&uid=" . $username . "&mail=" . $email);
+        header("Location: ../public_html/index?error=emptyfields&uid=" . $username . "&mail=" . $email);
         /*Verlasse das Skript falls der Fehler auftrat*/
         exit();
     }
@@ -20,26 +20,26 @@ if (isset($_POST['signup-submit'])) {
      anfangen soll
      und die Email muss gültig sein*/
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match('/^[A-Za-z]{1}[A-Za-z0-9]{5,31}$/', $username)) {
-        header("Location: ../public_html/signup.php?error=invalidmailuid");
+        header("Location: ../public_html/index.php?error=invalidmailuid");
         exit();
     }
     /*Check ob die Email valide ist*/
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../public_html/signup.php?error=invalidmail&uid=" . $username);
+        header("Location: ../public_html/index.php?error=invalidmail&uid=" . $username);
         exit();
     }
     /*Usernamen dürfen nur aus a-z,A-Z,0-9 bestehen*/
     else if (!preg_match('/^[A-Za-z]{1}[A-Za-z0-9]{5,31}$/', $username)) {
-        header("Location: ../public_html/signup.php?error=invaliduid&mail=" . $email);
+        header("Location: ../public_html/index.php?error=invaliduid&mail=" . $email);
         exit();
     } /*Passwörter müssen übereinstimmen*/
     else if ($password !== $passwordRepeat) {
-        header("Location: ../public_html/signup.php?error=passwordcheck&uid=" . $username . "&mail=" . $email);
+        header("Location: ../public_html/index.php?error=passwordcheck&uid=" . $username . "&mail=" . $email);
         exit();
     } else {
         /*Check ob der Username bereits vorhanden ist*/
         if (usernameExists($username)) {
-            header("Location: ../public_html/signup.php?error=userTaken&mail=" . $email);
+            header("Location: ../public_html/index.php?error=userTaken&mail=" . $email);
             exit();
         } else {
             /*Hashpasswort nach dem neusten Algorithmus*/
@@ -49,11 +49,11 @@ if (isset($_POST['signup-submit'])) {
 
             //var_dump($users);
             savearr($users);
-            header("Location ../public_html/signup.php?signup=success");
+            header("Location ../public_html/index.php?signup=success");
             exit();
         }
     }
 } else {  //user kommt nicht von dem Button
-    header("Location ../public_html/signup.php");
+    header("Location ../public_html/index.php");
     exit();
 }

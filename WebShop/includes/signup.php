@@ -22,7 +22,7 @@
         echo '<p class="w3-green">Signup successful!</p>';
     }
     ?>
-<form class="w3-container w3-padding-16" action="./signup.inc.php" method="post">
+<form class="w3-container w3-padding-16" action="../includes/signup.inc.php" method="post">
 
     <label class="w3-medium w3-bold" >Username</label>
     <input class="w3-input  " type="text" placeholder="Enter Username" name="uid" required>
