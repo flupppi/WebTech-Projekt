@@ -23,11 +23,14 @@ class Produkt
     function __serialize()
     {
         $serialized = serialize(self::$produkte);
-
         //Save the serialized array to a text file.
         file_put_contents('../data/products.txt', $serialized);
     }
-
+    function __unserialize(array $data)
+    {   $fileContents = file_get_contents('../data/users.txt');
+        //Unserialize the string back into an array.
+        self::$produkte = unserialize($fileContents);
+    }
 
 
     public function getData(): array

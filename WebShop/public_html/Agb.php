@@ -1,12 +1,14 @@
 <?php
 require_once 'header.php'
 ?>
-Allgemeine Geschäftsbedingungen der Firma Mode Shop Online<br />
+<main class="w3-container">
+    <section class="w3-padding-16 w3-content-margin">
+        <h1>Allgemeine Geschäftsbedingungen der Firma Mode Shop Online<h1>
 
-<br />
-<p style="font-weight: bold; padding-bottom: 10px;">§1 Geltung gegenüber Unternehmern und Begriffsdefinitionen</p>
+
+<h3>§1 Geltung gegenüber Unternehmern und Begriffsdefinitionen</h3>
 (1) Die nachfolgenden Allgemeinen Geschäftbedingungen gelten für alle Lieferungen zwischen uns und einem Verbraucher
-in ihrer zum Zeitpunkt der Bestellung gültigen Fassung.<br />
+in ihrer zum Zeitpunkt der Bestellung gültigen Fassung.<br/>
 <br />
 Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder
 ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können (§ 13 BGB).
@@ -136,7 +138,7 @@ Um Ihr Widerrufsrecht auszuüben, müssen Sie uns<br />
     Klaus Muster<br />
     Schneidershof<br />
     D-54293 Trier<br />
-    E-Mail shop@mode-shop-online.com<br />
+    E-Mail service@mode-shop-online.com<br />
     Telefax +49 (0)651 8103 333<br />
 </div>
 mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss,
@@ -191,7 +193,7 @@ Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.<br />
     Klaus Muster<br />
     Schneidershof<br />
     D-54293 Trier<br />
-    E-Mail shop@mode-shop-online.com<br />
+    E-Mail service@mode-shop-online.com<br />
     <br />
 
     Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/die Erbringung der folgenden Dienstleistung (*)<br />
@@ -278,8 +280,8 @@ Als Vertragssprache steht ausschließlich Deutsch zur Verfügung.<br />
 <br />
 <br />
 <p>Stand der AGB Jan.2020</p>
-
-<p><i><a href="http://www.agb.de">Gratis AGB</a> erstellt von agb.de</i></p>
+                <section class="w3-padding-16 w3-content-margin">
+</main>
 <?php
 require_once 'footer.php'
 ?>
