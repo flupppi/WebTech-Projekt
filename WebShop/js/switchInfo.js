@@ -1,10 +1,10 @@
 function switchInfo(infoID) {
-    var baumwolle = document.getElementsByClassName("Baumwolle");
-    var bestellung = document.getElementsByClassName("Bestellung");
-    var bezahlung = document.getElementsByClassName("Bezahlung");
-    var versand = document.getElementsByClassName("Versand");
-    var lieferung = document.getElementsByClassName("Lieferung");
-
+    var baumwolle = document.getElementsByClassName("1");
+    var bestellung = document.getElementsByClassName("2");
+    var bezahlung = document.getElementsByClassName("3");
+    var versand = document.getElementsByClassName("4");
+    var lieferung = document.getElementsByClassName("5");
+    var plastik = document.getElementsByClassName("6");
 
     for (let i = 0; i < baumwolle.length; i++) {
         if (baumwolle[i].className.indexOf("w3-show") === -1) {
@@ -41,6 +41,14 @@ function switchInfo(infoID) {
 
         } else {
             lieferung[i].className = lieferung[i].className.replace(" w3-show", "");
+        }
+    }
+    for (let i = 0; i < plastik.length; i++) {
+        if (plastik[i].className.indexOf("w3-show") === -1) {
+
+
+        } else {
+            plastik[i].className = plastik[i].className.replace(" w3-show", "");
         }
     }
 

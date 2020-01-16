@@ -88,7 +88,6 @@ function showCart(cartID){
 
 }
 
-
 function myFunction() {
     var x = document.getElementById("demo");
     if (x.className.indexOf("w3-show") == -1) {

@@ -5,7 +5,7 @@ include "header.php";
 <!--Breadcrumb-->
 
 
-<main>
+<main class="w3-animate-opacity">
     <nav class="w3-white w3-bar">
         <ul class="breadcrumb w3-white">
             <li><a href="index.php">Home</a></li>
@@ -19,7 +19,7 @@ include "header.php";
         <img src="img/About/MobileBanner.jpg" style="width:100%;" alt="banner">
     </div>
     <section class="w3-row-padding w3-padding-64 w3-container">
-        <article class="w3-content" style="max-width: 650px;">
+        <article class="w3-width-medium w3-content" >
 
             <h1>Unsere Story</h1>
 
@@ -60,7 +60,7 @@ Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprü
 
     <!-- Second Grid -->
     <section class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <article class="w3-content" style="max-width: 650px;">
+        <article class="w3-width-medium w3-content">
 
             <h2>Was uns antreibt…</h2>
 

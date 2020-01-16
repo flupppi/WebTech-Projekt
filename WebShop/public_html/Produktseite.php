@@ -109,13 +109,12 @@ include "header.php";
                     <label class="w3-bar-item w3-large w3-bold">1</label>
                     <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">+</button>
                 </div>
-                <button onclick="hinzufügen()" class=" w3-margin w3-btn w3-round w3-black w3-right w3-bar-item">IN DEN WARENKORB</button>
+                <button onclick="" class=" w3-margin w3-btn w3-round w3-black w3-right w3-bar-item">IN DEN WARENKORB</button>
             </footer>
         </section>
     </div>
-    <?php include 'component.php';?>
+    <?php include_once 'component.php'?>
     <?php cartElement('./img/items/BasicTShirtLouis.jpg', 'Unisex Basic T-Shirt Cashew','39.00€',1); ?>
-<i class="fa"> </i>
 
 
         <section class="w3-padding-48 w3-content-margin w3-row ">

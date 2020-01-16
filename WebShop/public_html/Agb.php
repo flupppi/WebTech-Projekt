@@ -1,7 +1,7 @@
 <?php
 require_once 'header.php'
 ?>
-<main class="w3-container">
+<main class="w3-container w3-margin">
     <section class="w3-padding-16 w3-content-margin">
         <h1>Allgemeine Geschäftsbedingungen der Firma Mode Shop Online<h1>
 
@@ -20,7 +20,7 @@ ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet 
 <br />
 <b>(2) Im Falle des Vertragsschlusses kommt der Vertrag mit<br />
 
-    <div style="font-weight: bold; margin-left: 20px;" >
+    <ul style="font-weight: bold; margin-left: 20px;" >
         <br />
         Mode Shop Online<br />
         Klaus Muster<br />
@@ -29,7 +29,7 @@ ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet 
         Registernummer 12131415<br />
         Registergericht Amtsgericht Trier<br />
         <br />
-    </div>
+    </ul>
     zustande.<br /></b>
 <br />
 (3) Die Präsentation der Waren in unserem Internetshop stellen kein rechtlich bindendes Vertragsangebot unsererseits dar,
