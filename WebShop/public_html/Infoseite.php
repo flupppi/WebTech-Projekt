@@ -4,6 +4,12 @@ include "header.php";
 ?>
     <script src="../js/switchInfo.js"></script>
     <main class="w3-container w3-content-margin">
+        <nav class="w3-white w3-bar">
+            <ul class="breadcrumb w3-white">
+                <li><a href="index.php">Home</a></li>
+                <li>Info</li>
+            </ul>
+        </nav>
 
         <section class="w3-quarter w3-row w3-padding-48">
             <aside class=" w3-light-grey w3-bar-block w3-border w3-card w3-round">

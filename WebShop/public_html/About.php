@@ -1,10 +1,7 @@
 <?php
 include "header.php";
 ?>
-
 <!--Breadcrumb-->
-
-
 <main class="w3-animate-opacity">
     <nav class="w3-white w3-bar">
         <ul class="breadcrumb w3-white">
