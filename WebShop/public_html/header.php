@@ -63,13 +63,13 @@
 
             </form>
             <nav role="button" class="w3-right">
-                <a href="signup.php" role="button" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
+                <a onclick="showSignup('signup')" role="button" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
                     ACCOUNT
                     ERSTELLEN
                 </a>
 
 
-                <button onclick="" role="button" tabindex="0" class=" w3-button "><i
+                <button onclick="showCart('cart')" role="button" tabindex="0" class=" w3-button "><i
                         class="fa fa-shopping-basket"></i>
                     WARENKORB</button>
 
@@ -156,17 +156,11 @@
         <figcaption class="w3-text-gray">Shop for sustainable Clothing</figcaption>
     </figure>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+
 
 </section>
 
 
+<?php include "../includes/signup.php";
+include "../includes/login.php";
+include "../includes/cart.php";?>
