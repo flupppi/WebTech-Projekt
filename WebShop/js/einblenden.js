@@ -6,7 +6,7 @@ function showLogin(loginID){
         if (signup.className.indexOf("w3-show") === -1) {
 
         } else {
-            signup.className = versand[i].className.replace(" w3-show", "");
+            signup.className = signup.className.replace(" w3-show", "");
         }
 
         if (cart.className.indexOf("w3-show") === -1) {

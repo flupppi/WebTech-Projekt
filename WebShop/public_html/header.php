@@ -163,4 +163,5 @@
 
 <?php include "../includes/signup.php";
 include "../includes/login.php";
-include "../includes/cart.php";?>
+include "../includes/cart.php";
+include "component.php"?>

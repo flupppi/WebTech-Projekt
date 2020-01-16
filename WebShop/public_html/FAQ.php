@@ -8,7 +8,7 @@ include "header.php";
             <div class="w3-quarter w3-row w3-padding-48">
                 <aside class=" w3-light-grey w3-bar-block w3-border w3-card w3-round">
                     <span class="fa-2x w3-bar-item w3-border-bottom w3-border-black">FAQ</span>
-                    <button onclick="questionSwitch('Versand')" class=" w3-bar-item w3-button w3-border-bottom">1.
+                    <button onclick="questionSwitch('Kundenkonto')" class=" w3-bar-item w3-button w3-border-bottom">1.
                         Kundenkonto
                     </button>
                     <button onclick="questionSwitch('Bestellung')" class="w3-bar-item w3-button w3-border-bottom">2.
@@ -17,10 +17,10 @@ include "header.php";
                     <button onclick="questionSwitch('Bezahlung')" class="w3-bar-item w3-button w3-border-bottom">3.
                         Bezahlung
                     </button>
-                    <button onclick="questionSwitch('Bezahlung')" class="w3-bar-item w3-button w3-border-bottom">4.
+                    <button onclick="questionSwitch('Versand')" class="w3-bar-item w3-button w3-border-bottom">4.
                         Versand & Lieferung
                     </button>
-                    <button onclick="questionSwitch('Bezahlung')" class=" w3-bar-item w3-button w3-border-bottom">5.
+                    <button onclick="questionSwitch('Lieferung')" class=" w3-bar-item w3-button w3-border-bottom">5.
                         Widerrufsrecht, Rücksendung & Umtausch
                     </button>
                 </aside>
@@ -34,7 +34,7 @@ include "header.php";
                     </div>
                     <section class="w3-content">
 
-                        <div class="Versand w3-hide w3-show w3-animate-opacity">
+                        <div class="Kundenkonto w3-hide w3-show w3-animate-opacity">
                             <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
                                     onclick="showAnswer('Demo1')">Welche Versandmöglichkeiten stehen mir zur
                                 Verfügung?
@@ -155,7 +155,7 @@ include "header.php";
                                 </p>
                             </article>
                             <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
-                                    onclick="showAnswer('Demo5')">Wohin kann das Paket geliefert werden?
+                                    onclick="showAnswer('Demo5')">Habe ich ein Widerrufsrecht?
 
                             </button>
                             <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo5">
@@ -192,8 +192,6 @@ include "header.php";
                                 </p>
                             </article>
                         </div>
-
-
                         <div class="Bestellung w3-hide w3-animate-opacity">
                             <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
                                     onclick="showAnswer('Demo6')">Wie erhalte ich die Rechnung zu meiner Bestellung?
@@ -251,8 +249,8 @@ include "header.php";
                         </div>
                         <div class="Bezahlung w3-hide w3-animate-opacity">
                             <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
-                                    onclick="showAnswer('Demo8')">Welche Zahlungsarten stehen im Lidl-Onlineshop zur
-                                Verfügung?
+                                    onclick="showAnswer('Demo8')">Kann ich mit dem Spediteur einen Liefertermin vereinbaren?
+
 
 
                             </button>
@@ -278,7 +276,8 @@ include "header.php";
                             </article>
 
                             <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
-                                    onclick="showAnswer('Demo9')">Was muss ich bei der Zahlung per Rechnung beachten?
+                                    onclick="showAnswer('Demo9')">Kann ich mit dem Spediteur einen Liefertermin vereinbaren?
+
 
                             </button>
                             <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo9">
@@ -315,6 +314,390 @@ include "header.php";
 
                                 </p>
                             </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo10')">Was muss ich bei der Zahlung per PayPal beachten?
+
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo10">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo11')">Kann ich mehrere Gutscheincodes bei einer Bestellung einlösen?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo11">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo12')">Wie wird der Gutscheincode eingelöst?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo12">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                        </div>
+                        <div class="Versand w3-hide w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo13')">Warum erhalte ich mehrere Rechnungen zu einer Bestellung?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo13">
+                                <p class="w3-padding">
+
+
+                                    Im Lidl-Onlineshop werden folgende Zahlungsarten angeboten:
+                                    <br><br>
+                                    Rechnung,
+                                    Lastschrift,
+                                    Vorauskasse,
+                                    PayPal,
+                                    Kreditkarte,
+                                    Ratenkauf,
+                                    Zahlpause,
+                                    Gutschein
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir im Einzelfall bestimmte Zahlungsarten
+                                    nicht anbieten können.
+
+                                </p>
+                            </article>
+
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo14')">Was muss ich bei der Zahlung per Lastschrift beachten?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo14">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo15')">Wie funktioniert der Ratenkauf?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo15">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo16')">Wo finde ich Videos zu meinem Artikel?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo16">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN, Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen. Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                        </div>
+                        <div class="Lieferung w3-hide w3-animate-opacity">
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo18')">Kann ich meinen Artikel umtauschen?
+                                zur
+                                Verfügung?
+
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo18">
+                                <p class="w3-padding">
+
+
+                                    Im Lidl-Onlineshop werden folgende Zahlungsarten angeboten:
+                                    <br><br>
+                                    Rechnung,
+                                    Lastschrift,
+                                    Vorauskasse,
+                                    PayPal,
+                                    Kreditkarte,
+                                    Ratenkauf,
+                                    Zahlpause,
+                                    Gutschein
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir im Einzelfall bestimmte
+                                    Zahlungsarten
+                                    nicht anbieten können.
+
+                                </p>
+                            </article>
+
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo19')">Mir liegen keine Retourenunterlagen vor. Was tun?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo19">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen
+                                    Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung
+                                    genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck
+                                    der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung
+                                    eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code
+                                    auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN,
+                                    Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen.
+                                    Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte
+                                    Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo20')">Wie kann ich eine online bestellte Matratze zurücksenden?
+
+                            </button>
+                            <article class="w3-hide w3-container w3-animate-right w3-animate-opacity" id="Demo20">
+                                <p class="w3-padding">
+
+                                    Beim Kauf auf Rechnung zahlen Sie den gesamten Rechnungsbetrag innerhalb von 14
+                                    Tagen nach Versand der Ware, abzüglich der Beträge von eventuellen
+                                    Rücksendungen.
+                                    Die Bezahlung erfolgt ganz einfach per Überweisung an die in der Rechnung
+                                    genannte
+                                    Bankverbindung.
+
+                                    <br><br>
+                                    Vergessen Sie bitte nicht, Ihre 9-stellige Bestellnummer als Verwendungszweck
+                                    der
+                                    Überweisung einzutragen.
+
+                                    <br><br>
+                                    Sie können die Überweisung Ihres Rechnungsbetrages auch bequem durch Nutzung
+                                    eines
+                                    Scan-Verfahrens innerhalb Ihres Online-Bankings vornehmen (soweit Ihre Hausbank
+                                    diese Funktion anbietet bzw. unterstützt). Dazu scannen Sie einfach den QR-Code
+                                    auf
+                                    Ihrer Rechnung oder laden das digitale Rechnungsdokument innerhalb Ihres
+                                    Online-Bankings hoch. Dabei werden die Überweisungsdaten wie Empfänger, IBAN,
+                                    Betrag
+                                    und Verwendungszweck automatisch in den Überweisungsträger übernommen.
+                                    Anschließend
+                                    können Sie die Zahlung wie gewohnt in Ihrem Online-Banking freigeben. Bei
+                                    technischen Fragen zum Scan-Verfahren, wie zum Beispiel der Einrichtung der
+                                    Funktionalität, wenden Sie sich bitte an Ihre Hausbank.
+
+                                    <br><br>
+                                    Bitte haben Sie Verständnis dafür, dass wir den Rechnungskauf für bestimmte
+                                    Artikel
+                                    und Bestellungen nicht anbieten können. Der Kauf auf Rechnung setzt zudem eine
+                                    positive Bonitätsüberprüfung voraus.
+
+                                    <br><br>
+                                    Wir akzeptieren weder Bargeld noch Schecks und können leider bei Verlust keine
+                                    Haftung übernehmen.
+
+                                </p>
+                            </article>
+                            <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
+                                    onclick="showAnswer('Demo11')">Ist die Rücksendung kostenlos?
+
+                            </button>
+
                         </div>
                     </section>
                 </div>
