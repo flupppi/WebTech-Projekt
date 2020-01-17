@@ -1,5 +1,5 @@
 <footer class="w3-black">
-    <section class="w3-content-margin w3-row w3-padding-16 w3-center">
+    <section class="w3-content-margin w3-row w3-padding-top-16 w3-center">
         <nav class="w3-third w3-black">
             <nav class="w3-bar-item"><a class="w3-button" href="About.php">About</a></nav>
             <nav class="w3-bar-item "><a class="w3-button"href="Blogübersicht.php">Blogübersicht</a></nav>

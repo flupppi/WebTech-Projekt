@@ -1,15 +1,41 @@
-<?php
 
-include "header.php";
+<?php include "header.php"; ?>
+<?php
+if (isset($_POST['add'])) {
+    /// print_r($_POST['product_id']);
+    if (isset($_SESSION['cart'])) {
+
+        $item_array_id = array_column($_SESSION['cart'], "product_id");
+
+        if (in_array($_POST['product_id'], $item_array_id)) {
+            echo "<script>alert('Product is already added in the cart..!')</script>";
+            echo "<script>window.location = '../public_html/Produktseite.php'</script>";
+        } else {
+            $count = count($_SESSION['cart']);
+            $item_array = array(
+                'product_id' => $_POST['product_id']
+            );
+            $_SESSION['cart'][$count] = $item_array;
+        }
+
+    } else {
+
+        $item_array = array('product_id' => $_POST['product_id']);
+
+        // Create new session variable
+        $_SESSION['cart'][0] = $item_array;
+        print_r($_SESSION['cart']);
+    }
+}
+
+print_r($_SESSION);
 ?>
 
 <script src="../js/slideshow_button.js"></script>
 <script src="../js/slideshow.js"></script>
 <main>
     <div class="w3-bar w3-content-margin">
-
         <section class="w3-col w3-padding-32 w3-half w3-hide-small">
-
             <article class="w3-third w3-right-align">
                 <figure class="w3-padding">
 
@@ -85,7 +111,8 @@ include "header.php";
                         <br>
 
 
-                        For certifications, information on the textile and production please carefully read our FAQ's.<br>
+                        For certifications, information on the textile and production please carefully read our
+                        FAQ's.<br>
                     </p>
                 </article>
             </div>
@@ -104,73 +131,80 @@ include "header.php";
             </div>
 
             <footer class="w3-bar w3-border-top">
+                <form method="post" action="../public_html/Produktseite.php">
                 <div class="w3-left w3-bar-item w3-padding-16">
                     <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">-</button>
                     <label class="w3-bar-item w3-large w3-bold">1</label>
                     <button class="w3-bar-item w3-button w3-white w3-hover-black w3-large">+</button>
                 </div>
-                <button onclick="" class=" w3-margin w3-btn w3-round w3-black w3-right w3-bar-item">IN DEN WARENKORB</button>
+                    <button class=" w3-margin w3-btn w3-round w3-black w3-right w3-bar-item" name="add" type="submit">IN DEN
+                        WARENKORB
+                    </button>
+                    <input type='hidden' name='product_id' value='Productid'>
+                </form>
             </footer>
         </section>
     </div>
-    <?php include_once 'component.php'?>
-    <?php cartElement('./img/items/BasicTShirtLouis.jpg', 'Unisex Basic T-Shirt Cashew','39.00€',1); ?>
+    <?php include_once 'component.php' ?>
+    <?php
+         component('./img/items/BasicTShirtLouis.jpg',
+             'Unisex Basic T-Shirt Cashew', '39.00€', 1);
+    ?>
 
 
-        <section class="w3-padding-48 w3-content-margin w3-row ">
-            <header class="w3-bar ">
-                <span class=" fa-2x fa-tex w3-text-green">HIER GIBTS NOCH MEHR!</span>
-                <button class=" w3-border w3-bar-item w3-button w3-right">
-                    <a class="w3-nouline" href="Produktübersicht.php">MEHR</a>
-                </button>
-            </header>
-            <section class="w3-row w3-padding">
-                <article class="w3-quarter  "> <a  class="w3-nouline" href="Produktseite.php">
-                        <figure class=" w3-margin">
+    <section class="w3-padding-48 w3-content-margin w3-row ">
+        <header class="w3-bar ">
+            <span class=" fa-2x fa-tex w3-text-green">HIER GIBTS NOCH MEHR!</span>
+            <button class=" w3-border w3-bar-item w3-button w3-right">
+                <a class="w3-nouline" href="Produktübersicht.php">MEHR</a>
+            </button>
+        </header>
+        <section class="w3-row w3-padding">
+            <article class="w3-quarter  "><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
 
-                            <img src="img/items/BasicTShirtLouis.jpg"  style="width:100%" alt="shirt türkis">
-                            <figcaption class="w3-container w3-center w3-medium">
-                                Unisex Basic T-Shirt Cashew
-                                <span class="w3-row">39.00€</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
-                        <figure class=" w3-margin">
-                            <img src="img/items/carla_Ecru.jpg" style="width:100%" alt="shirt türkis">
-                            <figcaption class="w3-container w3-center w3-medium">
-                                Carla Waffle Longsleeve Ecru
-                                <span class="w3-row">55.00€</span>
-                            </figcaption>
-                        </figure></a>
-                </article>
-                <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
-                        <figure class=" w3-margin">
-                            <img src="img/items/carla_sand.jpg" style="width:100%" alt="shirt türkis">
-                            <figcaption class="w3-container w3-center w3-medium">
-                                Carla Waffle Longsleeve Sand
-                                <span class="w3-row">39.00€</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article>
-                <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
-                        <figure class=" w3-margin">
-                            <img src="img/items/dariadeh_ayla_top_lowres.jpg" style="width:100%" alt="shirt türkis">
-                            <figcaption class="w3-container w3-center w3-medium">
-                                Alya Top White
-                                <span class="w3-row">39.00€</span>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </article
+                        <img src="img/items/BasicTShirtLouis.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Unisex Basic T-Shirt Cashew
+                            <span class="w3-row">39.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+                        <img src="img/items/carla_Ecru.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Carla Waffle Longsleeve Ecru
+                            <span class="w3-row">55.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+                        <img src="img/items/carla_sand.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Carla Waffle Longsleeve Sand
+                            <span class="w3-row">39.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="w3-quarter"><a class="w3-nouline" href="Produktseite.php">
+                    <figure class=" w3-margin">
+                        <img src="img/items/dariadeh_ayla_top_lowres.jpg" style="width:100%" alt="shirt türkis">
+                        <figcaption class="w3-container w3-center w3-medium">
+                            Alya Top White
+                            <span class="w3-row">39.00€</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article
 
-            </section>
         </section>
+    </section>
 </main>
-
-
 <?php
 include "footer.php";
 ?>

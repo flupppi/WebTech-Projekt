@@ -4,10 +4,12 @@
 if (isset($_POST['signup-submit'])) {
     require 'usersHandler.inc.php';
 
-    $username = $_POST['uid'];
-    $email = $_POST['mail'];
-    $password = $_POST['pwd'];
-    $passwordRepeat = $_POST['pwd-repeat'];
+
+    $username = isset($_POST['uid']) ? $_POST['uid'] : null;
+    $email = isset($_POST['mail']) ? $_POST['mail'] : null;
+    $password = isset($_POST['pwd']) ? $_POST['pwd'] : null;
+    $passwordRepeat = isset($_POST['pwd-repeat']) ? $_POST['pwd-repeat'] : null;
+
     /*Kein Feld darf leer sein*/
 
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
@@ -15,20 +17,17 @@ if (isset($_POST['signup-submit'])) {
         header("Location: ../public_html/index?error=emptyfields&uid=" . $username . "&mail=" . $email);
         /*Verlasse das Skript falls der Fehler auftrat*/
         exit();
-    }
-    /*Usernamen dürfen nur aus a-z,A-Z,0-9 bestehen, wobei die länge zwischen 5 und 31 ist und es mit einem Buchstaben
+    } /*Usernamen dürfen nur aus a-z,A-Z,0-9 bestehen, wobei die länge zwischen 5 und 31 ist und es mit einem Buchstaben
      anfangen soll
      und die Email muss gültig sein*/
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match('/^[A-Za-z]{1}[A-Za-z0-9]{5,31}$/', $username)) {
         header("Location: ../public_html/index.php?error=invalidmailuid");
         exit();
-    }
-    /*Check ob die Email valide ist*/
+    } /*Check ob die Email valide ist*/
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: ../public_html/index.php?error=invalidmail&uid=" . $username);
         exit();
-    }
-    /*Usernamen dürfen nur aus a-z,A-Z,0-9 bestehen*/
+    } /*Usernamen dürfen nur aus a-z,A-Z,0-9 bestehen*/
     else if (!preg_match('/^[A-Za-z]{1}[A-Za-z0-9]{5,31}$/', $username)) {
         header("Location: ../public_html/index.php?error=invaliduid&mail=" . $email);
         exit();

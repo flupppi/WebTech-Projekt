@@ -69,9 +69,18 @@
                 </a>
 
 
-                <button onclick="showCart('cart')" role="button" tabindex="0" class=" w3-button "><i
+
+
+                <button onclick="window.location = '../public_html/Warenkorb.php'" role="button" tabindex="0" class=" w3-button "><i
                         class="fa fa-shopping-basket"></i>
-                    WARENKORB</button>
+                    WARENKORB     <?php
+
+                    if (isset($_SESSION['cart'])){
+                        $count = count($_SESSION['cart']);
+                        //print_r($_SESSION);
+                        echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+                    }
+                    ?></button>
 
                 <?php if(ISSET($_SESSION['userId'])){
                     echo '<form action="../includes/logout.inc.php"><button type="submit"  role="button" tabindex="0" class=" w3-button"><i
@@ -118,7 +127,7 @@
             <button class="w3-button" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </button>
-            <nav  id="demo"class="w3-dropdown-content w3-bar-block w3-card-4">
+            <nav  id="demo" class="w3-dropdown-content w3-bar-block w3-card-4">
                 <form  role="search" action="#" class="w3-bar  w3-hover-white w3-border-light-grey  ">
                     <label>
                         <input class="w3-input w3-bar-item" type="text" placeholder="Search.." name="search" id="search">
@@ -145,7 +154,7 @@
                     class="fa fa-shopping-basket"></i>
             </button>
           <?php if(!ISSET($_SESSION['userId'])){
-              echo '<button  onclick="showLogin(\'login\')" role="button" tabindex="0" class=" w3-button ">
+              echo '<button    onclick="window.location = \'../public_html/Warenkorb.php\'" role="button" tabindex="0" class=" w3-button ">
                         <i class="fa fa-sign-in"></i>
                     </button>';
           }else {
@@ -171,5 +180,5 @@
 
 <?php include "../includes/signup.php";
 include "../includes/login.php";
-include "../includes/cart.php";
+include "../includes/cart.inc.php";
 include "component.php"?>
