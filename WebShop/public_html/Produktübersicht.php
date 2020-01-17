@@ -1,5 +1,9 @@
-<?php
+<!DOCTYPE html>
+<html lang="de">
+<meta charset="UTF-8">
+<title>Produktübersicht</title>
 
+<?php
 include "header.php";
 ?>
 <script src="../js/tags.js"></script>
@@ -7,7 +11,7 @@ include "header.php";
 
 <main>
     <section class="w3-container w3-content-margin">
-        <container class="w3-quarter w3-row w3-padding-48">
+        <nav class="w3-quarter w3-row w3-padding-48">
             <aside class=" w3-light-grey w3-bar-block w3-border w3-card w3-round">
                 <span class="fa-2x w3-bar-item w3-border-bottom w3-border-black">Kategorien</span>
 
@@ -26,11 +30,12 @@ include "header.php";
                 <button class="w3-margin-small w3-round w3-button w3-border-bottom w3-dark-gray" onclick="showTagged('denim')">Denim</button>
                 <button class="w3-margin-small w3-round w3-button w3-border-bottom w3-dark-gray" onclick="showTagged('w3-nouline')">Alle</button>
             </aside>
-        </container>
-        <produkte id="artikel" class="w3-threequarter w3-row">
+        </nav>
+        <div id="artikel" class="w3-threequarter w3-row">
             <section  class="w3-row w3-padding">
                 <header class="w3-bar w3-border-bottom">
                     <span class=" fa-2x fa-tex">PRODUKTE</span>
+                    <!--auskommentiert, da keine funktion
                     <a class="w3-right">
                         <span class="w3-large w3-text-grey w3-margin">sortieren: </span>
                         <nav class="w3-dropdown-hover w3-right">
@@ -43,7 +48,7 @@ include "header.php";
                                 <a href="#" class="w3-bar-item w3-button">Datum, älteste</a>
                             </ul>
                         </nav>
-                    </a>
+                    </a> -->
                 </header>
 
 
@@ -135,7 +140,7 @@ include "header.php";
                             </figcaption>
                         </figure></a>
                 </div>
-                <div  class="w3-third"><a class="w3-nouline w3-hide w3-show"href="Produktseite.php">
+                <div  class="w3-third"><a class="w3-nouline w3-hide w3-show" href="Produktseite.php">
                         <figure class=" w3-margin">
                             <img src="img/items/Bobbie_Kurkuma.jpg" style="width:100%" alt="shirt türkis">
                             <figcaption class="w3-container w3-center w3-medium">
@@ -157,7 +162,7 @@ include "header.php";
                     <a href="Produktübersicht.php" class="w3-button">&raquo;</a>
                 </nav>
             </footer>
-        </produkte>
+        </div>
 
     </section>
 </main>

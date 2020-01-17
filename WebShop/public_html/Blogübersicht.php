@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="de">
+<title>Blog</title>
+<meta charset="UTF-8">
+
 <?php
 include "header.php";
 ?>
@@ -24,21 +29,19 @@ include "header.php";
                 Schaffrin sowie Tipps zum fairen Modekonsum aus dem Fair Fashion Guide. Webseite und Printmagazin sind
                 in Zusammenarbeit mit FEMNET e. V. und dem Beneficial Design Institute entstanden. Hier ein Auszug mit
                 Links zum Weiterschmökern im Original…
-                <br></p>
+                <br>
                 <nav class="w3-row w3-col m8 s12">
                     <p>
-                        <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                                »</a></button>
+                        <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                     </p>
                 </nav>
 
             </section>
-            <section class="w3-third">
+            <figure class="w3-third" style="margin: 0">
                 <img class="w3-image" src="../text/blog/fair_fashion_guide.jpg" alt="future fashion forward e. V.">
                 <figcaption class="w3-small">Trendy und nachhaltig: Wie das geht zeigt der Fair Fashion Guide.
                 </figcaption>
-            </section>
+            </figure>
         </article>
 
 
@@ -61,16 +64,14 @@ include "header.php";
                 </p>
                 <nav class="w3-row w3-col m8 s12">
                     <p>
-                        <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                                »</a></button>
+                        <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                     </p>
                 </nav>
             </section>
-            <section class="w3-third">
+            <figure class="w3-third" style="margin: 0">
                 <img class="w3-image" src="../text/blog/quote_ellenköhrer.jpg" alt="future fashion forward e. V.">
                 <figcaption class="w3-hide">future fashion forward e. V.</figcaption>
-            </section>
+            </figure>
         </article>
 
 
@@ -99,17 +100,15 @@ include "header.php";
                 </p>
                 <nav class="w3-row w3-col m8 s12">
                     <p>
-                        <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                                »</a></button>
+                        <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                     </p>
                 </nav>
             </section>
-            <section class="w3-third">
+            <figure class="w3-third" style="margin: 0">
                 <img class="w3-image w3-sha" src="../text/blog/MUD-JEANS-Blog_Interview-moi.jpg"
                      alt="future fashion forward e. V.">
                 <figcaption class="w3-hide">FASHION MADE FAIR</figcaption>
-            </section>
+            </figure>
         </article>
 
         <article class="w3-border-bottom w3-border-light-gray w3-margin w3-white w3-row">
@@ -132,16 +131,14 @@ include "header.php";
                 </p>
                 <nav class="w3-row w3-col m8 s12">
                     <p>
-                        <button class="w3-button w3-padding-large
-                                        w3-white w3-border"><a href="Blogseite.php" class="w3-nouline w3-bold">READ MORE
-                                »</a></button>
+                        <a class="w3-button w3-padding-large w3-nouline w3-bold w3-border" href="Blogseite.php">READ MORE »</a>
                     </p>
                 </nav>
             </section>
-            <section class="w3-third">
+            <figure class="w3-third" style="margin: 0">
                 <img class="w3-image" src="../text/blog/kronprinzenpalaisswmoi.jpg" alt="future fashion forward e. V.">
                 <figcaption class="w3-hide">Das war einmal: Greenshowroom Salonshow im Kronprinzenpalais</figcaption>
-            </section>
+            </figure>
         </article>
     </main>
     <footer class="w3-center w3-padding-24">

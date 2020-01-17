@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="de">
+<title>Impressum</title>
+<meta charset="UTF-8">
+
 <?php
 include "header.php";
 ?>

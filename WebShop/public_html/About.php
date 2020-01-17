@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
 <?php
 include "header.php";
 ?>
@@ -15,22 +21,21 @@ include "header.php";
     <!--erster text-->
     <section class="w3-row-padding w3-padding-64 w3-container">
         <article class="w3-width-medium w3-content" >
-
             <h1>Unsere Story</h1>
                 <p class="w3-padding-large">Im Herzen von Oberfranken, in der beschaulichen Textilschmiede Helmbrechts, hat bleed seinen Ursprung –
                 und bleibt dort bis heute verwurzelt. Gegründet wurde das Label 2008 von Local und Skateboarder Michael
                 Spitzbarth, der nach seinem Studium im Bereich Textildesign einige Jahre als Freelancer für
                 unterschiedliche Bekleidungsfirmen gearbeitet hat. Während dieser Zeit bekam er einen guten Einblick in
                 die Machenschaften der Textilindustrie weshalb danach für ihn fest stand, dass sich etwas ändern musste.
-Die Natur hatte genug geblutet und das musste stoppen. Und somit war nicht nur der Name, sondern auch
+                Die Natur hatte genug geblutet und das musste stoppen. Und somit war nicht nur der Name, sondern auch
                     die Marke geboren.</p>
 
 
                 <p class="w3-padding-large">Mit der Unterstützung von Freunden und Familie machte Michael sich damals an die ersten Kollektionen.
-Sein Ziel, damals wie heute Menschen jeden Alters über guten Style und ohne erhobenen Zeigefinger auf
+                Sein Ziel, damals wie heute Menschen jeden Alters über guten Style und ohne erhobenen Zeigefinger auf
                 die grüne Welle bringen. Nach mittlerweile 10 Jahren hat sich bleed einen festen Platz auf dem grünen
                 Markt gesichert und auch das Team ist gewachsen. Über 10 Mitarbeiter sind wir mittlerweile an der Zahl.
-Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprüche im Sport erfüllt, als
+                Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprüche im Sport erfüllt, als
                 auch im Alltag eine gute Figur machen muss. Von Beginn an waren und sind wir bis heute immer auf der
                 Suche nach besonderen Materialien. Diese nutzen wir auch gerne auf unkonventionelle Weise für
                 innovative, funktionale und außergewöhnliche Produkte. Durch Kooperationen mit Organisationen, die
@@ -39,7 +44,7 @@ Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprü
 
 
             <p class="w3-text-grey w3-block">
-"Zu einem nachhaltigen Lifestyle inspirieren, der Spaß macht und einfach in das tägliche Leben zu
+                "Zu einem nachhaltigen Lifestyle inspirieren, der Spaß macht und einfach in das tägliche Leben zu
                 integrieren ist."
             </p>
 
@@ -62,7 +67,7 @@ Zusammen designen, testen und vertreiben wir Kleidung, die sowohl unsere Ansprü
                 unterschiedlichen Erfahrungen aus dem Sportbereich mit ein.</p>
 
             <p class="w3-padding-large">
-Um am Ende sicher zu gehen, dass auch alle Produkte unseren eigenen, hohen Ansprüchen und damit auch
+                Um am Ende sicher zu gehen, dass auch alle Produkte unseren eigenen, hohen Ansprüchen und damit auch
                 denen der Kunden gerecht werden, müssen sie erst einmal die Eigentests bestehen. Ob auf dem Brett im
                 stadteigenen Skatepark, beim Joggen durch die Helmbrechtser Wälder, beim Klettern in der fränkischen
                 Schweiz oder auch beim Surfen an den Stränden dieser Welt.

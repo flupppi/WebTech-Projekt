@@ -1,9 +1,11 @@
-<?php
+<!DOCTYPE html>
+<html lang="de">
+<meta charset="UTF-8">
+<title>Kategorien</title>
 
+<?php
 include "header.php";
 ?>
-<!DOCTYPE html>
-<html>
 
 <!--auf dieser seite werden die verschiedenen kategorien präsentiert-->
 <main style="background-image: url('img/Cottonfield.jpg')">
@@ -18,7 +20,7 @@ include "header.php";
                     onmouseout="changeImg('r1p1', 'img/shirtfront.jpg')">
                     <span class="w3-display-middle w3-text-white" style="font-size:8vw"> SHIRTS</span>
                     <!--bilder dienen als verlinkung auf die produktübersicht-->
-                    <a href="Produktübersicht.php" class=""> <img id="r1p1" src="img/shirtfront.jpg" style="width:100%"> </a>
+                    <a href="Produktübersicht.php" class=""> <img id="r1p1" src="img/shirtfront.jpg" style="width:100%" alt="Bild zur Kategorie"> </a>
                 </div>
             </article>
             <article class="w3-half">
@@ -27,7 +29,7 @@ include "header.php";
                     onmouseover="changeImg('r1p2', 'img/shirtback.jpg')"
                     onmouseout="changeImg('r1p2', 'img/shirtfront.jpg')">
                     <span class="w3-display-middle w3-text-white" style="font-size:8vw"> JACKETS</span>
-                    <a href="Produktübersicht.php" class=""> <img id="r1p2" src="img/shirtfront.jpg" style="width:100%"> </a>
+                    <a href="Produktübersicht.php" class=""> <img id="r1p2" src="img/shirtfront.jpg" style="width:100%" alt="Bild zur Kategorie"> </a>
                 </div>
             </article>
         </section>
@@ -38,7 +40,7 @@ include "header.php";
                     onmouseover="changeImg('r2p1', 'img/shirtback.jpg')"
                     onmouseout="changeImg('r2p1', 'img/shirtfront.jpg')">
                     <span class="w3-display-middle w3-text-white" style="font-size:8vw"> PANTS</span>
-                    <a href="Produktübersicht.php" class=""> <img id="r2p1" src="img/shirtfront.jpg" style="width:100%"> </a>
+                    <a href="Produktübersicht.php" class=""> <img id="r2p1" src="img/shirtfront.jpg" style="width:100%" alt="Bild zur Kategorie"> </a>
                 </div>
             </article>
             <article class="w3-half">
@@ -47,19 +49,18 @@ include "header.php";
                     onmouseover="changeImg('r2p2', 'img/shirtback.jpg')"
                     onmouseout="changeImg('r2p2', 'img/shirtfront.jpg')">
                     <span class="w3-display-middle w3-text-white" style="font-size:8vw"> SHOES</span>
-                    <a href="Produktübersicht.php" class=""> <img id="r2p2" src="img/shirtfront.jpg" style="width:100%"> </a>
+                    <a href="Produktübersicht.php" class=""> <img id="r2p2" src="img/shirtfront.jpg" style="width:100%" alt="Bild zur Kategorie"> </a>
                 </div>
             </article>
         </section>
     </nav>
 </main>
-</html>
 
 <!-- tauscht den src pfad der img aus-->
 <script>
-function changeImg(id, path){
-    document.getElementById(id).src=path;
-}
+    function changeImg(id, path){
+        document.getElementById(id).src=path;
+    }
 </script>
 
 
