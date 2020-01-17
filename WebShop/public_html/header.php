@@ -148,10 +148,10 @@
                     class="fa fa-shopping-basket"></i><?php if (isset($_SESSION['cart'])){
                 $count = count($_SESSION['cart']);
                 //print_r($_SESSION);
-                echo "<span id=\"cart_count\" class=\"w3-green\">$count</span>";
+                echo "<span id=\"cart_count_mobile\" class=\"w3-green\">$count</span>";
                 }
                 ?></button>
-            </button>
+
           <?php if(!ISSET($_SESSION['userId'])){
               echo '<button    onclick="window.location = \'../public_html/Warenkorb.php\'" role="button" tabindex="0" class=" w3-button ">
                         <i class="fa fa-sign-in"></i>

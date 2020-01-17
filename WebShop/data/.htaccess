@@ -1,0 +1,5 @@
+# Einfacher Passwortschutz mit .htaccess
+AuthType Basic
+AuthName "Passwortgeschützter Bereich"
+AuthUserFile /kunden/homepages/34/d810174660/htdocs/sites/WebShop/data
+AuthPGAuthoritative Off

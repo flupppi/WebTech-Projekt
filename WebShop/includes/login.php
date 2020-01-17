@@ -1,4 +1,4 @@
-<section id="login"class="w3-hide">
+<section id="login" lass="w3-hide">
 <h2 class="w3-xlarge w3-bold w3-margin-left"> Login</h2>
 <form class="w3-container w3-padding-16" action="../includes/login.inc.php" method="post">
 
