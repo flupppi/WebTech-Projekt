@@ -1,7 +1,7 @@
 
 
 function showLogin(loginID){
-    let signup = document.getElementById('signup')
+    let signup = document.getElementById('signup');
     let cart = document.getElementById('cart');
         if (signup.className.indexOf("w3-show") === -1) {
 
@@ -60,7 +60,7 @@ function showSignup(signupID){
 
 function showCart(cartID){
     let signup = document.getElementById('signup');
-    let login = document.getElementById('login')
+    let login = document.getElementById('login');
 
     if (signup.className.indexOf("w3-show") === -1) {
 

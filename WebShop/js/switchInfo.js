@@ -1,10 +1,10 @@
 function switchInfo(infoID) {
-    var baumwolle = document.getElementsByClassName("1");
-    var bestellung = document.getElementsByClassName("2");
-    var bezahlung = document.getElementsByClassName("3");
-    var versand = document.getElementsByClassName("4");
-    var lieferung = document.getElementsByClassName("5");
-    var plastik = document.getElementsByClassName("6");
+    const baumwolle = document.getElementsByClassName("1");
+    const bestellung = document.getElementsByClassName("2");
+    const bezahlung = document.getElementsByClassName("3");
+    const versand = document.getElementsByClassName("4");
+    const lieferung = document.getElementsByClassName("5");
+    const plastik = document.getElementsByClassName("6");
 
     for (let i = 0; i < baumwolle.length; i++) {
         if (baumwolle[i].className.indexOf("w3-show") === -1) {

@@ -1,41 +1,41 @@
 /* https://github.com/WICG/focus-ring */
 document.addEventListener('DOMContentLoaded', function() {
-    var hadKeyboardEvent = false,
-        keyboardModalityWhitelist = [ 'input:not([type])',
-                                      'input[type=text]',
-                                      'input[type=number]',
-                                      'input[type=date]',
-                                      'input[type=time]',
-                                      'input[type=datetime]',
-                                      'textarea',
-                                      '[role=textbox]' ].join(','),
+    let hadKeyboardEvent = false,
+        keyboardModalityWhitelist = ['input:not([type])',
+            'input[type=text]',
+            'input[type=number]',
+            'input[type=date]',
+            'input[type=time]',
+            'input[type=datetime]',
+            'textarea',
+            '[role=textbox]'].join(','),
         isHandlingKeyboardThrottle,
         matcher = (function () {
-      var el = document.body;
-      if (el.matchesSelector)
-    return el.matchesSelector;
-      if (el.webkitMatchesSelector)
-    return el.webkitMatchesSelector;
-      if (el.mozMatchesSelector)
-    return el.mozMatchesSelector;
-      if (el.msMatchesSelector)
-    return el.msMatchesSelector;
-      console.error('Couldn\'t find any matchesSelector method on document.body.');
-  }()),
-  focusTriggersKeyboardModality = function (el) {
-      var triggers = false;
-      if (matcher) {
-    triggers = matcher.call(el, keyboardModalityWhitelist) && matcher.call(el, ':not([readonly]');
-      }
-      return triggers;
-  },
-        addFocusRingClass = function(el) {
+            const el = document.body;
+            if (el.matchesSelector)
+                return el.matchesSelector;
+            if (el.webkitMatchesSelector)
+                return el.webkitMatchesSelector;
+            if (el.mozMatchesSelector)
+                return el.mozMatchesSelector;
+            if (el.msMatchesSelector)
+                return el.msMatchesSelector;
+            console.error('Couldn\'t find any matchesSelector method on document.body.');
+        }()),
+        focusTriggersKeyboardModality = function (el) {
+            let triggers = false;
+            if (matcher) {
+                triggers = matcher.call(el, keyboardModalityWhitelist) && matcher.call(el, ':not([readonly]');
+            }
+            return triggers;
+        },
+        addFocusRingClass = function (el) {
             if (el.classList.contains('focus-ring'))
                 return;
             el.classList.add('focus-ring');
             el.setAttribute('data-focus-ring-added', '');
         },
-        removeFocusRingClass = function(el) {
+        removeFocusRingClass = function (el) {
             if (!el.hasAttribute('data-focus-ring-added'))
                 return;
             el.classList.remove('focus-ring');

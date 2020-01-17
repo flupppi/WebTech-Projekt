@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
       return overlay;
-    }
+    };
   
     document.body.addEventListener('focus', function(e) {
       var rect;

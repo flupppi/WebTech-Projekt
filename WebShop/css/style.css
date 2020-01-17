@@ -41,7 +41,6 @@ a:active,a:hover{
 abbr[title]{
     border-bottom:none;
     text-decoration:underline;
-    text-decoration:underline dotted
 }
 b,strong{
     font-weight:bolder
@@ -249,7 +248,6 @@ a{
 .w3-btn,.w3-button{
     -webkit-touch-callout:none;
     -webkit-user-select:none;
-    -khtml-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none
@@ -737,14 +735,14 @@ a{
 .w3-display-left{
     position:absolute;
     top:50%;
-    left:0%;
+    left:0;
     transform:translate(0%,-50%);
     -ms-transform:translate(-0%,-50%)
 }
 .w3-display-right{
     position:absolute;
     top:50%;
-    right:0%;
+    right:0;
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%)
 }
@@ -809,7 +807,7 @@ a{
     margin-bottom:16px
 }
 .w3-code,.w3-codespan{
-    font-family:Consolas,"courier new";
+    font-family: Consolas, "courier new", serif;
     font-size:16px
 }
 
@@ -1477,6 +1475,7 @@ a{
     .w3-width-medium{
         max-width: 600px;
     }
+    /* css für Slideshow*/
   .mySlidesMobile {
       display:none
   }
@@ -1489,6 +1488,23 @@ a{
   .w3-badge {
       height:13px;width:13px;padding:0
   }
+  /* Schriftart*/
 .w3-funky{
     font-family: 'Gloria Hallelujah', cursive;
+}
+/* css klassen für den Focus Ring*/
+.focus-ring-overlay {
+    background: rgba(0, 0, 255, 0.25);
+    transition: top 0.25s, left 0.25s, width 0.25s, height 0.25s, opacity 0.125s;
+}
+.focus-ring {
+    outline: none;
+    border:solid!important;
+    border-color:aqua;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+:focus:not(.focus-ring) {
+    outline: none;
 }

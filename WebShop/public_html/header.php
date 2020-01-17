@@ -15,26 +15,6 @@
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-    .focus-ring-overlay {
-        background: rgba(0, 0, 255, 0.25);
-        transition: top 0.25s, left 0.25s, width 0.25s, height 0.25s, opacity 0.125s;
-    }
-    .focus-ring {
-        outline: none;
-        border:solid!important;
-        border-color:aqua;
-        border-width: 2px;
-        border-radius: 5px;
-    }
-
-    :focus:not(.focus-ring) {
-        outline: none;
-    }
-</style>
-
-
-
 <!-- HEADER HTML -->
 <section id="header" class="w3-hide-small">
     <!--Top Bar - Language Switch-->
@@ -48,18 +28,22 @@
 
         <!--Static Icon Bar-->
         <nav class="w3-bar w3-white">
-            <form action="/action_page.php"
+            <form action=""
                   class="w3-hover-white w3-border-light-grey w3-left w3-margin-left">
+                <!-- Suche hat noch keine Funktion -->
                 <label>
                     <input class="w3-input w3-bar-item" type="text" placeholder="Search.." name="search" id="search">
                 </label>
                 <button class="w3-button w3-green" type="submit"><i class="fa fa-search"></i></button>
             </form>
+
+            <!-- Einblenden von Signup-->
             <nav class="w3-right">
                 <a onclick="showSignup('signup')" tabindex="0" class=" w3-button"> <i class="fa fa-user"></i>
                     ACCOUNT
                     ERSTELLEN
                 </a>
+                <!-- Einblenden von Einkaufswagen-->
                 <button onclick="showCart('cart')" tabindex="0" class=" w3-button "><i
                         class="fa fa-shopping-basket"></i>
                     WARENKORB</button>

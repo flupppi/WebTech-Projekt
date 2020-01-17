@@ -1,5 +1,4 @@
-
-var slideIndex = 1;
+let slideIndex = 1;
 showDivsMobile(slideIndex);
 
 function plusDivs(n) {
@@ -11,9 +10,9 @@ function currentDivMobile(n) {
 }
 
 function showDivsMobile(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlidesMobile");
-    var dots = document.getElementsByClassName("demoMobile");
+    let i;
+    const x = document.getElementsByClassName("mySlidesMobile");
+    const dots = document.getElementsByClassName("demoMobile");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {

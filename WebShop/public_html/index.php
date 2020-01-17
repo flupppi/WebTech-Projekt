@@ -44,7 +44,7 @@
             </nav>
 
         </section>
-        <figure class="w3-third" style="margin:0px">
+        <figure class="w3-third" style="margin:0">
             <img class="w3-image" src="../text/blog/fair_fashion_guide.jpg" alt="future fashion forward e. V.">
             <figcaption class="w3-small">Trendy und nachhaltig: Wie das geht zeigt der Fair Fashion Guide.
             </figcaption>
@@ -75,7 +75,7 @@
                 </p>
             </nav>
         </section>
-        <figure class="w3-third" style="margin:0px">
+        <figure class="w3-third" style="margin:0">
             <img class="w3-image" src="../text/blog/quote_ellenköhrer.jpg" alt="future fashion forward e. V.">
             <figcaption class="w3-hide">future fashion forward e. V.</figcaption>
         </figure>

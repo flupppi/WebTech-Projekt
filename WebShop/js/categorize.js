@@ -1,5 +1,5 @@
 function categorize(category){
-    var artikel = document.getElementsByClassName("w3-hide")
+    const artikel = document.getElementsByClassName("w3-hide");
 
 
     for (let i = 0; i < artikel.length; i++) {
@@ -10,7 +10,7 @@ function categorize(category){
         }
     }
 
-    var x = document.getElementsByClassName(category);
+    const x = document.getElementsByClassName(category);
 
     let i;
     for (i = 0; i < x.length; i++) {

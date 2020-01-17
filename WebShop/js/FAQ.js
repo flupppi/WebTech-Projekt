@@ -12,11 +12,11 @@ function showAnswer(id) {
 }
 
 function questionSwitch(clName) {
-    var kundenkonto = document.getElementsByClassName("Kundenkonto");
-    var bestellung = document.getElementsByClassName("Bestellung");
-    var bezahlung = document.getElementsByClassName("Bezahlung");
-    var versand = document.getElementsByClassName("Versand");
-    var lieferung = document.getElementsByClassName("Lieferung");
+    const kundenkonto = document.getElementsByClassName("Kundenkonto");
+    const bestellung = document.getElementsByClassName("Bestellung");
+    const bezahlung = document.getElementsByClassName("Bezahlung");
+    const versand = document.getElementsByClassName("Versand");
+    const lieferung = document.getElementsByClassName("Lieferung");
 
 
     for (let i = 0; i < versand.length; i++) {
@@ -57,7 +57,7 @@ function questionSwitch(clName) {
         }
     }
 
-    var x = document.getElementsByClassName(clName);
+    const x = document.getElementsByClassName(clName);
 
     let i;
     for (i = 0; i < x.length; i++) {

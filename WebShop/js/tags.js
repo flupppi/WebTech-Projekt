@@ -1,5 +1,5 @@
 function showTagged(tag){
-    var artikel = document.getElementsByClassName("w3-hide")
+    const artikel = document.getElementsByClassName("w3-hide");
 
 
     for (let i = 0; i < artikel.length; i++) {
@@ -10,7 +10,7 @@ function showTagged(tag){
         }
     }
 
-    var x = document.getElementsByClassName(tag);
+    const x = document.getElementsByClassName(tag);
 
     let i;
     for (i = 0; i < x.length; i++) {
