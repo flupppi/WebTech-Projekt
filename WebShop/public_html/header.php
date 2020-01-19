@@ -1,5 +1,6 @@
 <?php
     session_start();
+    error_reporting(0);
 ?>
 
 <!-- META HTML -->
@@ -71,7 +72,16 @@
 
                 <button onclick="window.location = '../public_html/Warenkorb.php'" role="button" tabindex="0" class=" w3-button "><i
                         class="fa fa-shopping-basket"></i>
-                    WARENKORB</button>
+                    WARENKORB<?php
+
+                    if (isset($_SESSION['cart'])){
+                        $count = count($_SESSION['cart']);
+                        echo "<span id=\"cart_count\" class=\"w3-padding-small w3-green\">$count</span>";
+                    }else{
+                        echo "<span id=\"cart_count\" class=\"w3-padding-small w3-green\">0</span>";
+                    }
+
+                    ?> </button>
 
                 <?php if(ISSET($_SESSION['userId'])){
                     echo '<form action="../includes/logout.inc.php"><button type="submit"  role="button" tabindex="0" class=" w3-button"><i
@@ -142,7 +152,13 @@
             <button onclick="showSignup('signup')" role="button" tabindex="0" class=" w3-button "><i class="fa fa-user"></i>
             </button>
             <button onclick="window.location = '../public_html/Warenkorb.php" role="button" tabindex="0" class=" w3-button  "><i
-                    class="fa fa-shopping-basket"></i>
+                    class="fa fa-shopping-basket"></i> <?php if (isset($_SESSION['cart'])){
+                $count = count($_SESSION['cart']);
+
+                echo "<span id=\"cart_count\" class=\"w3-padding-small w3-green\">$count</span>";
+                }else{
+                echo "<span id=\"cart_count\" class=\"w3-green\">0</span>";
+                } ?>
             </button>
           <?php if(!ISSET($_SESSION['userId'])){
               echo '<button  onclick="showLogin(\'login\')" role="button" tabindex="0" class=" w3-button ">

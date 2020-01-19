@@ -4,14 +4,14 @@ function component($productname, $productprice, $productimg, $productid)
 {
     $element = "
     
-    <div class=\"w3-card w3-quarter w3-col w3-padding-24 \">
+    <div class=\"w3-quarter w3-col w3-padding\">
                 <form action=\"../public_html/Produktseite.php\" method=\"post\">
-                    <div class=\"w3-center\">
+                    <div class=\"w3-center w3-card \">
                         <div>
                             <img src=\"$productimg\" alt=\"Image1\" class=\"w3-cart-img\">
                         </div>
-                        <div class=\"\">
-                            <h5 class=\"\">$productname</h5>
+                        <div class=\"w3-padding\">
+                            <h5 class=\"w3-bold\">$productname</h5>
                             <p class=\"\">
                                 Some quick example text to build on the card.
                             </p>
@@ -19,7 +19,7 @@ function component($productname, $productprice, $productimg, $productid)
                                 <small><s class=\"\">$519</s></small>
                                 <span class=\"price\">$$productprice</span>
                             </h5>
-                            <button type=\"submit\" class=\"w3-button w3-green my-3\" name=\"add\">Add to Cart <i class=\"fa fa-shopping-cart\"></i></button>
+                            <button type=\"submit\" class=\"w3-button w3-green my-3 w3-padding\" name=\"add\">Add to Cart <i class=\"fa fa-shopping-cart\"></i></button>
                              <input type='hidden' name='product_id' value='$productid'>
                         </div>
                     </div>

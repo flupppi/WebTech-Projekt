@@ -1,7 +1,7 @@
 <section id="signup" class="w3-hide">
 <h2 class="w3-xlarge w3-bold w3-margin-left"> Signup</h2>
     <?php
-    error_reporting(E_ERROR | E_PARSE);
+    error_reporting(0);
     if (isset($_GET['error'])){
         if ($_GET['error'] == "emptyfields"){
             echo '<p class="w3-red w3-center">Fill in all fields!</p>';

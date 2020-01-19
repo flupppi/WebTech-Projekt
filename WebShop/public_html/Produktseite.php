@@ -20,10 +20,10 @@ if (isset($_POST['add'])) {
         $item_array = array('product_id' => $_POST['product_id']);
         // Create new session variable
         $_SESSION['cart'][0] = $item_array;
-        print_r($_SESSION['cart']);
+  //      print_r($_SESSION['cart']);
     }
 }
-print_r($_SESSION);
+//print_r($_SESSION);
 ?>
 
 <script src="../js/slideshow_button.js"></script>
