@@ -1,27 +1,11 @@
-<?php
-
-if (isset($_POST['remove'])){
-    if ($_GET['action'] == 'remove'){
-        foreach ($_SESSION['cart'] as $key => $value){
-            if($value["product_id"] == $_GET['id']){
-                unset($_SESSION['cart'][$key]);
-                echo "<script>alert('Product has been Removed...!')</script>";
-                echo "<script>window.location = 'cart.inc.php'</script>";
-            }
-        }
-    }
-}
-?>
 <section id="cart" class="w3-hide w3-container w3-light-grey">
     <h2 class="w3-xlarge w3-bold w3-margin-left"> Einkaufswagen</h2>
-
     <nav class="w3-row w3-padding w3-border-bottom">
         <label class="w3-quarter">ARTIKEL</label>
         <label class="w3-quarter">PREIS</label>
         <label class="w3-quarter">MENGE</label>
         <label class="w3-quarter">GESAMT</label>
     </nav>
-
     <article class="w3-row w3-padding w3-border-bottom">
         <div class=" w3-quarter">
             <img class="" style=" max-width: 70% " src="img/deluxe_polo_mint_white_large.jpg" alt="polo shirt">

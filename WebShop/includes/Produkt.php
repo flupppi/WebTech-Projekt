@@ -57,7 +57,7 @@ class Produkt
     {
         return $this->produktID;
     }
-    public function __getProduktByID($id)
+    public static function __getProduktByID($id)
     {
         return self::$produkte[$id];
     }

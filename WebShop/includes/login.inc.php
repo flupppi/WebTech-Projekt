@@ -20,7 +20,7 @@ if(isset($_POST['login-submit'])){
                     exit();
                 }
                 else if ($pwdCheck === true){
-                    $_SESSION['userId'] = $user->getEmail();
+                    $_SESSION['userId'] = $user->getUsername();
                     print_r($_SESSION);
                     header("Location: ../public_html/index.php?login=success");
                     exit();

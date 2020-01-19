@@ -15,7 +15,5 @@
         <input class="w3-check " type="checkbox" checked="checked" name="remember"> <label>Remember me</label>
         <span class="w3-right">Forgot <a href="#">password?</a></span>
     </div>
-
-
 </form>
 </section>

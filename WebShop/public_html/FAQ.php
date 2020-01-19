@@ -695,9 +695,7 @@ include "header.php";
                             </article>
                             <button class="w3-button w3-block w3-light-grey w3-left-align w3-border"
                                     onclick="showAnswer('Demo11')">Ist die Rücksendung kostenlos?
-
                             </button>
-
                         </div>
                     </section>
                 </div>
